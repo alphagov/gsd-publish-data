@@ -1,0 +1,86 @@
+{% extends "layouts/govuk-registers.html" %}
+
+{% set section = "index" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="navigation-service">
+    <div class="navigation-service-name">
+      Department for Business, Energy and Industrial Strategy
+    </div>
+  </div>
+
+  <div class="grid-row">
+
+    <div class="column-one-quarter">
+      <nav class="navigation">
+        <ul>
+          <li><a href="task-list">Tasks</a></li>
+          <li><a href="contacts">Manage contacts</a></li>
+          <li><a href="monitor">Check uploads</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="column-three-quarters">
+
+      <h1 class="heading-large heading-account">
+        Check uploads
+      </h1>
+      
+      <p>
+        The next deadline for submitting data is 31 July 2017.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Responsible for</th>
+            <th scope="col"><span class="visuallyhidden">Status</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Example</td>
+            <td>Example</td>
+            <td><strong class="task-missing">Missing</strong></td>
+          </tr>
+          <tr>
+            <td>Example</td>
+            <td>Example</td>
+            <td><strong class="task-missing">Missing</strong></td>
+          </tr>
+          <tr>
+            <td>Example</td>
+            <td>Example</td>
+            <td><strong class="task-completed">Completed</strong></td>
+          </tr>
+          <tr>
+            <td>Example</td>
+            <td>Example</td>
+            <td><strong class="task-completed">Completed</strong></td>
+          </tr>
+          <tr>
+            <td>Example</td>
+            <td>Example</td>
+            <td><strong class="task-completed">Completed</strong></td>
+          </tr>
+
+        </tbody>
+      </table>   
+
+    </div>
+
+  </div>
+</main>
+
+{% endblock %}
+
+

@@ -1,0 +1,100 @@
+{% extends "layouts/govuk-registers.html" %}
+
+{% set section = "index" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="navigation-service">
+    <div class="navigation-service-name">
+      Department for Business, Energy and Industrial Strategy
+    </div>
+  </div>
+
+  <div class="grid-row">
+
+    <div class="column-one-quarter">
+      <nav class="navigation">
+        <ul>
+          <li><a href="task-list">Tasks</a></li>
+          <li><a href="contacts">Manage contacts</a></li>
+          <li><a href="monitor">Check uploads</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="column-three-quarters">
+
+      <h1 class="heading-large heading-account">
+        Contacts
+      </h1>
+      
+      <p>
+        This is the list of people that will be emailed to upload data every month.
+      </p>
+
+      <p>
+        <a href="#">Add a new contact</a> or <a href="upload-contacts">upload a new spreadsheet</a>
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Responsible for</th>
+            <th scope="col">Email address</th>
+            <th scope="col"><span class="visuallyhidden">Actions</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Example</td>
+            <td>Example</td>
+            <td>example@email.com</td>
+            <td class="numeric"><a href="edit-contact">Change</a></td>
+          </tr>
+          <tr>
+            <td>Example</td>
+            <td>Example</td>
+            <td>example@email.com</td>
+            <td class="numeric"><a href="edit-contact">Change</a></td>
+          </tr>
+          <tr>
+            <td>Example</td>
+            <td>Example</td>
+            <td>example@email.com</td>
+            <td class="numeric"><a href="edit-contact">Change</a></td>
+          </tr>
+          <tr>
+            <td>Example</td>
+            <td>Example</td>
+            <td>example@email.com</td>
+            <td class="numeric"><a href="edit-contact">Change</a></td>
+          </tr>
+          <tr>
+            <td>Example</td>
+            <td>Example</td>
+            <td>example@email.com</td>
+            <td class="numeric"><a href="edit-contact">Change</a></td>
+          </tr>
+
+        </tbody>
+      </table>  
+
+      <p>
+        <br><a class="button" href="task-list">Save and continue</a>
+      </p>  
+
+    </div>
+
+  </div>
+</main>
+
+{% endblock %}
+
+

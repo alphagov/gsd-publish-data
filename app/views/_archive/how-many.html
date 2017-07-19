@@ -1,0 +1,50 @@
+{% extends "layouts/govuk-registers.html" %}
+
+{% set section = "index" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_alpha.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="route-one" method="get" class="form">
+
+        <h2 class="heading-large">
+          How many services will you be publishing data for?
+        </h2>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">How many services will you be publishing data for?</legend>
+
+            <div class="multiple-choice">
+              <input id="numberServicesOne" type="radio" name="numberServices" value="one">
+              <label for="numberServicesOne">One</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="numberServicesMore" type="radio" name="numberServices" value="more">
+              <label for="numberServicesMore">More than one</label>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{% endblock %}

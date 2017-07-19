@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block service_name %}
+{% endblock %}
+
+{% block page_title %}
+  
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Upload data about your service for the period 1 to 30 June 2017
+      </h1>
+
+      <p>
+        The deadline for submitting this data is 31 July 2017.
+      </p>
+
+      <p>Upload your file as a CSV, TSV, ODS, or Microsoft Excel spreadsheet.</p>
+
+      <div class="drag-and-drop">
+        <h2 class="bold-small">Drag and drop completed spreadsheet here</h2>
+        <p>
+          <input type="file" name="file" id="file" class="inputfile" />
+          <label for="file">or choose a file</label>
+        </p>
+      </div>
+
+      <p>Once submitted, this data will be published automatically on 1 March 2017.</p>
+
+      <p><a class="button" href="magiclink-validation">Check and submit</a></p>
+
+
+    </div>
+  </div>
+</main>
+{% endblock %}

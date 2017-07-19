@@ -1,0 +1,103 @@
+{% extends "layouts/govuk-registers.html" %}
+
+{% set section = "index" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="navigation-service">
+    <a href="task-list">Back to Department for Business, Energy and Industrial Strategy</a>
+  </div>
+
+  <div class="grid-row">
+
+    <div class="column-full">
+
+      <h1 class="heading-large">Your profile</h1>
+
+      <table class="table table-font-xsmall">
+        <caption class="heading-medium table-heading visuallyhidden">
+          Account settings
+        </caption>
+        <thead class="table-field-headings">
+          <tr>
+            <th scope="col" class="table-field-heading-first">
+                <span class="visuallyhidden">Setting</span>
+            </th>
+            <th scope="col" class="table-field-heading">
+                <span class="visuallyhidden">Value</span>
+            </th>
+            <th scope="col" class="table-field-heading">
+                <span class="visuallyhidden">Link to change</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-row">
+            <td class="table-field-center-aligned ">
+              <div class="">
+                Name
+              </div>
+            </td>
+            <td class="table-field-center-aligned ">
+              <div class="">
+                Firstname Lastname
+              </div>
+            </td>
+            <td class="table-field-right-aligned ">
+              <div class="">
+                <a href="#">Change</a>
+              </div>
+            </td>  
+          </tr>
+          <tr class="table-row">
+            <td class="table-field-center-aligned ">
+              <div class="">
+                Email address
+              </div>
+            </td>
+            <td class="table-field-center-aligned ">
+              <div class="">
+                firstname.lastname@government.email.gov.uk
+              </div>
+            </td>
+            <td class="table-field-right-aligned ">
+              <div class="">
+                <a href="#">Change</a>
+              </div>
+            </td>
+          </tr>
+          <tr class="table-row">
+            <td class="table-field-center-aligned ">
+              <div class="">
+                Password
+              </div>
+            </td>
+            <td class="table-field-center-aligned ">
+              <div class="">
+                Last changed 29 June at 11:41am
+              </div>
+            </td>
+            <td class="table-field-right-aligned ">
+              <div class="">
+                <a href="#">Change</a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+      
+  </div>
+
+</main>
+
+{% endblock %}
+
+

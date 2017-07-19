@@ -1,0 +1,251 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block service_name %}
+  Service Manual
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <div class="breadcrumb">
+        <ol>
+          <li><a href="#">Service manual home</a></li>
+          <li><a href="#">Publish data</a></li>      
+          <li>Publishing data to Government Service Data</li>
+        </ol>
+      </div>    
+    </div>
+  </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">
+          <span class="heading-secondary">
+            Publish data
+          </span>
+          <span class="page-name">
+            Publishing to Government Service Data
+          </span>
+      </h1>      
+      <div class="metadata-header">
+        <dl>
+          <dt>Published by:</dt>
+          <dd>
+            <a href="#">Government Service Data team</a>
+          </dd>
+          <dt>Last updated:</dt>
+          <dd>
+            <a href="#page-updates">31 January 2017</a>
+          </dd>
+        </dl>  
+      </div>
+    </div>
+    <div class="column-third">
+      <p class="feedback"><a href="#">Give feedback about this page</a></p>
+    </div>
+  </div>
+
+  <div class="grid-row">
+
+    <div class="column-third js-stick-at-top-while-scrolling">
+      <div class="sidebar">
+        <!-- content pulled into this via something in application.js -->
+      </div>
+    </div>
+
+    <div class="column-two-thirds">
+
+      <!-- Main content -->
+      <div class="markdown">
+
+        <p>
+          You only need to publish to Government Service Data if your service is transactional.
+        </p>
+
+        <p>
+          A transactional service is one that lets a user update their status with government. This is distinct from a ‘look-up’ service, which provides users with guidance but doesn’t allow them to change their status.
+        </p>
+
+        <p>
+          Here are some examples of transactional services:
+          <ul class="list-bullet">
+            <li>Making a claim</li>
+            <li>Applying for a licence</li>
+            <li>Buying a product</li>
+            <li>Booking a service</li>
+            <li>Applying for a benefit</li>
+            <li>Paying a fine or a tax bill</li>
+          </ul>
+        </p> 
+
+        <p>A user using this type of service successfully results in a transaction.</p>   
+
+        <h2 class="heading-medium sm" id="types-of-information-to-be-published">Types of information to be published</h2>
+
+        <p>
+          If your service is transactional, you must publish three types of information to Government Service Data:
+          <ul class="list-bullet">
+            <li>information about the service</li>
+            <li>the KPIs</li>
+            <li>information about your data</li>
+          </ul>  
+        </p>
+
+        <h2 class="heading-medium" id="information-about-the-service">Information about the service</h2>
+
+        <p>
+          Includes information on:
+          <ul class="list-bullet">
+            <li>Your service’s purpose - why it was built, its policy objectives and the user need it meets</li>
+            <li>How it works - the processes and back-office operations that allow it to function</li>
+            <li>Information about the key user groups, such as where they live and the demographic they belong to</li>
+            <li>How frequently the service is used</li>
+            <li>How long, on average, it takes transactions handled by your service to end in an outcome </li>
+          </ul>
+        </p> 
+        
+        <h2 class="heading-medium" id="the-kpis">The KPIs</h2>
+
+        <h3 class="heading-small">
+          1. Number of transactions received, split by channel
+        </h3>
+
+        <p>
+          This KPI records the number of transactions your service received, split by the following channels:
+          <ul class="list-bullet">
+            <li>Online — do not include transactions where an online tool was used to fill out a paper form, or transactions received via web chat</li>
+            <li>Phone — do not include interactive voice response (IVR) or purely informational calls that don’t affect the outcome of a transaction</li>
+            <li>Paper form — include any sending method (post, email, fax, uploading)</li>
+            <li>Face-to-face — do not include transactions where the user handed in a paper form in person</li>
+            <li>Other</li>
+          </ul>
+        </p>  
+
+        <p>
+          All numbers (total number of transactions received and number of transactions received through each channel) are part of the KPIs and are published.
+        </p>  
+
+        <h3 class="heading-small">
+          2. Number of transactions ending in an outcome
+        </h3>
+
+        <p>
+          The number of transactions that ended with the user’s status with government being updated.
+        </p>
+
+        <p>
+          For example, the user applies for a benefit and is either accepted or rejected. Even if the application is rejected, this is still a change and so a transaction has taken place.
+        </p>
+
+        <h3 class="heading-small">
+          3. Number of transactions ending in the user’s intended outcome
+        </h3>
+
+        <p>
+          The number of transactions that ended with the user reaching the outcome they set out to achieve. For example, the user applies for a benefit and is accepted.
+        </p>
+        
+        <p>
+          For metrics 2 and 3, data should relate to the month in which the transaction ended.
+        </p>   
+
+        <h3 class="heading-small">
+          4. Number of phone calls received, split by reason for calling
+        </h3> 
+
+        <p>
+          The total number of calls your service received, split by the following reasons:
+          <ul class="list-bullet">
+            <li>User called to get information - to check eligibility, for example, or ask for information they couldn’t get online</li>
+            <li>User called to chase progress </li>
+            <li>User called to challenge a decision</li>
+            <li>Other - for example, the user wanted to make a transaction via the phone, or needed to get help using the service</li>
+          </ul>
+        </p>
+
+        <p>
+          If you’re providing data based on a sample of calls, you also need to tell us your sample size. The KPI is the sample, not the overall figure.
+        </p>  
+
+        <h2 class="heading-medium" id="information-about-your-data">Information about your data</h2>
+
+        <p>
+          This information is published alongside your data and allows other civil servants to understand its reliability and validity.
+        </p>
+
+        <p>
+          Include information on:
+          <ul class="list-bullet">
+            <li>the organisation that owns the service (usually the department and/or agency that your service sits within)</li>
+            <li>how the data was collected (the methods, tools, sources and calculation methods used)</li>
+          </ul>  
+        </p>
+
+        <!-- marker -->
+        <h2 class="heading-medium sm" id="when-must-i-publish-it">When must I publish it?</h2>
+        <p>You need to publish a month’s worth of data on a monthly basis, two months in arrears. For example, data for February would be published in April.</p>
+
+
+      </div>
+
+    </div>
+  </div>
+    <div class="grid-row">
+      <div class="footer-content">
+        <div class="column-third">
+          <p style="visibility:hidden;">a</p>
+        </div>
+
+        <div class="column-two-thirds">
+
+          <div class="metadata-footer">
+            <dl>
+              <dt>Published by:</dt>
+              <dd>
+                <a href="/communities/agile-community/">
+                  Government Service Data team
+                </a>
+              </dd>
+              <dt id="page-updates">Last update:</dt>
+              <dd>
+                <a href="/designing-services/form-structure/update-26-june-2015/">31 January 2017</a></br>
+                <span class="update-description">
+                  <p>Updated to include new metrics.</p>
+                </span>
+                <a href=""><span id="otherupdatesbutton">+ Show all page updates (3)</span></a>
+              </dd>
+              <dd class="otherupdates">
+                <div class="update-other-dates">
+                  <span><a href="/designing-services/form-structure/update-6-june-2015/">6 June 2015</a></span>
+                  <span class="update-description">
+                    <p>Added links to external resources.</p>
+                    <p>Examples from around the wider industry were included to give more evidence to the guideance and offer teams futher advice on how to do agile.</p>
+
+                </div>
+
+                <div class="update-other-dates">
+                  <span><a href="/designing-services/form-structure/update-12-january-2015/">12 January 2015</a></span>
+                  <span class="update-description">Guidance first published</span>
+                </div>
+              </dd>
+
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+
+{% endblock %}
+
+

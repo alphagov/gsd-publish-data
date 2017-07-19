@@ -1,0 +1,40 @@
+{% extends "layouts/govuk-registers.html" %}
+
+{% set section = "index" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="" method="get" class="form">
+
+        <h2 class="heading-xlarge">
+          Create an account for Government Service Data
+        </h2>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Email address</label>
+          <input class="form-control form-control-2-3" id="email" name="email" type="text" value="your.name@government.email.gov.uk">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="password">Create password</label>
+          <input class="form-control form-control-2-3" id="password" name="password" type="password">
+        </div>
+
+        <div class="form-group">
+          <a class="button" href="confirm-organisation" role="button">Continue</a>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{% endblock %}

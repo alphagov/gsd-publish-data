@@ -1,0 +1,38 @@
+{% extends "layouts/govuk-registers.html" %}
+
+{% set section = "index" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_alpha.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Publish data about government services
+      </h1>
+      
+      <p class="lede">Collect standardised metrics about your service. Publish them monthly to Government Service Data.</p>
+     
+      <a class="button button-start" href="createaccount" role="button">Create an account</a> <span class="secondary-cta lede">or <a href="#">sign in</a></span>
+
+      <h2 class="heading-medium">Before you start</h2>
+
+      <p>All government services are mandated to publish a standard set of metrics. Civil servants use this data to prioritise work and improve services.</p>
+
+      <p>Read the guidance in the <a href="#">Service Manual</a> on how to collect these metrics about your service or services.</p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+

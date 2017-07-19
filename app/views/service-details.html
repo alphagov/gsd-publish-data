@@ -1,0 +1,79 @@
+{% extends "layouts/govuk-registers.html" %}
+
+{% set section = "index" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_alpha.html" %}
+
+  <div class="grid-row">
+
+    <div class="column-third" style="margin-top: 45px">
+      <ul class="admin-nav">
+        <li><a href="#">Tasks</a></li>
+        <li>Edit service details</li>
+        <li><a href="permissions">Manage collaborators</a></li>
+        <li><a href="homepage">Sign out</a></li>
+      </ul>
+    </div>
+
+    <div class="column-two-thirds">
+
+      <form action="" method="get" class="form">
+
+        <h1 class="heading-large">
+          Details about your service
+        </h1>
+
+        <div class="form-group">
+          <label class="form-label" for="serviceName">Service name
+            <span class="form-hint form-control-3-4">Use the name of the service as it appears to users</span>
+          </label>
+          <input class="form-control form-control-3-4" id="serviceName" name="serviceName" type="text">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="deliveryOrg">The organisation that delivers the service</label>
+          <input class="form-control form-control-3-4" id="deliveryOrg" name="deliveryOrg" type="text">
+          <!-- this should be an auto-complete pulling in the government organisation register -->
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="purpose">The purpose of the service</label>
+          <span class="form-hint form-control-3-4">Why it was built, its policy objectives and the user need it meets</span>
+          <textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="purpose">How the service works</label>
+          <span class="form-hint form-control-3-4">Describe the processes and back-office operations that allow the service to function</span>
+          <textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="purpose">How frequently the service is used</label>
+          <span class="form-hint form-control-3-4">How often does the average user access this service?</span>
+          <textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="2"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="purpose">Time it takes for transactions to end in an outcome</label>
+          <span class="form-hint form-control-3-4">The average time it takes for a user to get what they applied for</span>
+          <textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="2"></textarea>
+        </div>
+
+        <div class="form-group">
+          <a class="button" href="#" role="button">Save changes</a>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{% endblock %}

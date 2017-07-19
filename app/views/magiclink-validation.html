@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block service_name %}
+{% endblock %}
+
+{% block page_title %}
+  
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+        <h2 class="heading-medium error-summary-heading">
+          There are a 3 formatting errors in the spreadsheet
+        </h2>
+        <p>
+          <ul class="list-bullet">
+            <li>Dates need to be in MMYYYY format</li>
+            <li>'The Department for Business, Innovation and Skills' is not a recognised organisation</li>
+            <li>'Calls received' shouldn't contain other anything than numbers</li>
+          </ul>
+        </p> 
+        <h2 class="heading-medium error-summary-heading">
+          There is 1 anomalous entry in the spreadsheet
+        </h2>
+        <p>
+          <ul class="list-bullet">
+            <li>Number of online transactions received is over 10 times larger than the previous month's entry</li>
+          </ul>
+        </p>  
+        <p>
+          Correct these and <a href="#upload">upload again</a>.
+        </p>
+        <!-- <ul class="error-summary-list">
+          <li><a href="#example-personal-details">Descriptive link to the question with an error</a></li>
+        </ul> -->
+      </div>
+
+      <form action="" method="get" class="form">
+
+        <h1 class="heading-large">
+          Upload data about your service for the period 1 to 30 June 2017
+        </h1>
+
+        <p>The deadline for submitting this data is 31 July 2017.</p>
+
+        <p>Upload your file as a CSV, TSV, ODS, or Microsoft Excel spreadsheet</p>
+
+        <div class="drag-and-drop" id="upload">
+          <h2 class="bold-small">Drag and drop completed spreadsheet here</h2>
+          <p>
+            <input type="file" name="file" id="file" class="inputfile" />
+            <label for="file">or choose a file</label>
+          </p>
+        </div>
+
+        <p>Once submitted, this data will be published automatically on 1 September 2017.</p>
+
+        <p><a class="button" href="magiclink-success">Check and submit</a></p>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{% endblock %}

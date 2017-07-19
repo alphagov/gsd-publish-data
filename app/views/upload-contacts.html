@@ -1,0 +1,118 @@
+{% extends "layouts/govuk-registers.html" %}
+
+{% set section = "index" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="navigation-service">
+    <div class="navigation-service-name">
+      Department for Business, Energy and Industrial Strategy
+    </div>
+  </div>
+
+  <div class="grid-row">
+
+    <div class="column-one-quarter"#>
+      <nav class="navigation">
+        <ul>
+          <li><a href="task-list">Tasks</a></li>
+          <li><a href="contacts">Manage contacts</a></li>
+          <li><a href="monitor">Check uploads</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="column-three-quarters column-minimum">
+
+      <h1 class="heading-large heading-account">
+        Upload contacts list
+      </h1>
+
+      <p>Upload a spreadsheet containing the names and email addresses of the people you currently ask for Transactions Explorer data. This will be used to send automatic data requests in the future.</p>
+
+      <a class="button" href="contacts">Choose a file</a>
+
+      <h2 class="heading-medium">Your file needs to look like this example</h2>
+
+      <p>Save your file as a CSV, TSV, ODS, or Microsoft Excel spreadsheet</p>
+
+      <div class="spreadsheet">
+
+        <table class="table table-font-xsmall">
+          <caption class="heading-medium table-heading visuallyhidden">
+            Example
+          </caption>
+          <thead class="table-field-headings-visible">
+            <tr>
+              <th scope="col" class="table-field-heading-first">
+              </th>
+              <th scope="col" class="table-field-heading">
+                A
+              </th>
+              <th scope="col" class="table-field-heading">
+                B
+              </th>
+              <th scope="col" class="table-field-heading">
+                C
+              </th>
+            </tr>
+          </thead>
+          <tbody>          
+            <tr class="table-row">
+              <td class="table-field-index">
+                1
+              </td>
+              <td class="table-field-center-aligned ">
+                <div class="">
+                  name
+                </div>
+              </td>
+              <td class="table-field-center-aligned ">
+                <div class="">
+                  responsible for 
+                </div>
+              </td>
+              <td class="table-field-center-aligned ">
+                <div class="">
+                  email address 
+                </div>
+              </td>
+            </tr>
+          
+            <tr class="table-row">
+              <td class="table-field-index">
+                2
+              </td>
+              <td class="table-field-center-aligned ">
+                <div class="">
+                  example
+                </div>
+              </td>
+              <td class="table-field-center-aligned ">
+                <div class="">
+                  example
+                </div>
+              </td>
+              <td class="table-field-center-aligned ">
+                <div class="">
+                  test@example.com
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p style="margin-top: 5px; font-size: 16px;"><a href="downloads/example.csv" download>Download this example</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

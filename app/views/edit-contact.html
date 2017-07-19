@@ -1,0 +1,54 @@
+{% extends "layouts/govuk-registers.html" %}
+
+{% set section = "index" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="navigation-service">
+    <div class="navigation-service-name">
+      Department for Business, Energy and Industrial Strategy
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="" method="get" class="form">
+
+        <h1 class="heading-large">
+          Change contact
+        </h1>
+
+        <div class="form-group">
+          <label class="form-label" for="password">Name</label>
+          <input class="form-control form-control-2-3" id="password" name="password" type="text" value="Example">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="password">Responsible for</label>
+          <input class="form-control form-control-2-3" id="password" name="password" type="text" value="Example">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Email address
+          </label>
+          <input class="form-control form-control-2-3" id="email" name="email" type="text" value="example@email.com">
+        </div>
+
+        
+
+        <div class="form-group">
+          <a class="button" href="contacts" role="button">Save changes</a>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{% endblock %}
