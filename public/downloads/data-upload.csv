@@ -1,0 +1,4 @@
+G,Month,Service Details,,,The number of transactions received by the service,Channels which the transactions were received,,,,,The number of transactions ending in an outcome,The number of transactions that ended in the user's intended outcome ,The total number of calls to the service,Reasons people call a service,,,
+,MM/YYYY,Service Name ,Department,Agency,,Online,Phone,Paper,Face-to-face,Other,,,,To get information,To chase progress,To challenge a decision,Other
+,,,,,,,,,,,,,,,,,
+EXAMPLE,Jan-17,Book your Example,Department of Example,Example Agency,"  300,000 ","  150,000 ","  90,000 ","  40,000 ","  10,000 ","  10,000 ","250,000","  200,000 ","  400,000 ","  200,000 ","  100,000 ","  50,000 ","  50,000 "
