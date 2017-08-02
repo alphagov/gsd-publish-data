@@ -682,14 +682,14 @@ a.js-header-toggle.menu.js-hidden {
   padding-top: 3px;
 }
 
-/* service manual uses different type scale what */
+/* service manual uses different type scale WTF */
 
 .sm {
   font-size: 27px;
 }
 
 
-/* */
+/* preview banner */
 
 .preview-banner {
   border: 5px $turquoise solid;
@@ -703,4 +703,10 @@ a.js-header-toggle.menu.js-hidden {
     padding: 0 15px
   }
 
+}
+
+/* spacing for form email */
+
+fieldset > h2 {
+  margin: 15px 0 10px;
 }
