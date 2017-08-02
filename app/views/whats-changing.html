@@ -1,0 +1,88 @@
+{% extends "layouts/govuk-registers.html" %}
+
+{% set section = "index" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="navigation-service">
+    <div class="navigation-service-name">
+      Department for Business, Energy and Industrial Strategy
+    </div>
+  </div>
+
+  <div class="grid-row">
+    
+    <div class="column-one-quarter"#>
+      <nav class="navigation">
+        <ul>
+          <li><a href="task-list">Tasks</a></li>
+          <li><a href="contacts">Manage contacts</a></li>
+          <li><a href="monitor">Check uploads</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="column-three-quarters column-minimum">
+
+      <h1 class="heading-large heading-account">
+        What's changing
+      </h1>
+
+      <p class="lede">How the changes will affect you.</p>
+
+      <h2 class="heading-medium">
+        1. New KPIs
+      </h2>
+
+      <p>
+        There are several new KPIs being introduced. This is so that data users can understand more about the demand on different services across government.
+      </p>
+
+      <p>
+        Specific guidance on each KPI can be found in the <a href="service-manual">Service Manual</a>.
+      </p>
+
+      <h2 class="heading-medium">
+        2. Monthly publishing rather than quarterly
+      </h2>
+
+      <p>
+        This allows data users to see a more granular level of detail and understand trends better.
+      </p>
+
+      <p>
+        There is a consistent date for publishing every month, which is the last day of the following month. For example, data for the period 1 to 31 January must be published by 28 February.
+      </p>
+
+      <h2 class="heading-medium">
+        3. New processes for publishing data
+      </h2>
+
+      <p>
+        As before, you are responsible for making sure data is published for multiple services in your organisation.
+      </p>
+
+      <p>
+        However, we are making it easier to gather data. By uploading a list of all the contacts you currently ask for data, we can automate the process of sending out requests. Your contacts will then be able to upload data directly, rather than by emailing it back to you.
+      </p>
+
+      <p>
+        You also have the ability to monitor the progress of data uploads, so that you know who to chase up for missing data.
+      </p>
+
+      <p>
+        <br><a class="button" href="task-list">Continue</a>
+      </p>
+
+
+    </div>
+
+
+  </div>
+</main>
+{% endblock %}

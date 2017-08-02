@@ -12,9 +12,6 @@ $task-list-indent: 0px;
 
 .task-list {
   margin-top: $gutter;
-  @include media(tablet) {
-    margin-top: ($gutter * 2);
-  }
 }
 
 

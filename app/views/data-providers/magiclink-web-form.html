@@ -1,0 +1,246 @@
+{% extends "layout.html" %}
+
+{% block service_name %}
+{% endblock %}
+
+{% block page_title %}
+  
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Provide data about your service for the period 1 to 31 July 2017
+      </h1>
+
+      <p>
+        The deadline for providing this data is 31 August 2017.
+      </p>
+
+      <form>
+        <fieldset>
+
+          <h2 class="bold-medium">Transactions received</h2>
+
+          <div class="form-group">
+            <label class="form-label" for="online-transactions">
+              <details>
+                <summary>
+                  <span class="summary">
+                    Online
+                  </span>
+                </summary>
+                <div class="panel">
+                  Do not include transactions where an online tool was used to fill out a paper form, or transactions received via web chat
+                </div>
+              </details>  
+            </label>
+            <input class="form-control form-control-1-4" id="online-transactions" name="online-transactions" type="number">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="phone-transactions">
+              <details>
+                <summary>
+                  <span class="summary">
+                    Phone
+                  </span>
+                </summary>
+                <div class="panel">
+                  Do not include interactive voice response (IVR) or purely informational calls that don’t affect the outcome of a transaction
+                </div>
+              </details>  
+            </label>
+            <input class="form-control form-control-1-4" id="phone-transactions" name="phone-transactions" type="number">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="paper-transactions">
+              <details>
+                <summary>
+                  <span class="summary">
+                    Paper
+                  </span>
+                </summary>
+                <div class="panel">
+                  Paper form — include any sending method (post, email, fax, uploading)
+                </div>
+              </details>  
+            </label>
+            <input class="form-control form-control-1-4" id="paper-transactions" name="paper-transactions" type="number">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="face-to-face-transactions">
+              <details>
+                <summary>
+                  <span class="summary">
+                    Face-to-face
+                  </span>
+                </summary>
+                <div class="panel">
+                  Do not include transactions where the user handed in a paper form in person
+                </div>
+              </details>  
+            </label>
+            <input class="form-control form-control-1-4" id="paper-transactions" name="paper-transactions" type="number">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="other-transactions">
+              <details>
+                <summary>
+                  <span class="summary">
+                    Other
+                  </span>
+                </summary>
+                <div class="panel">
+                  ???
+                </div>
+              </details>  
+            </label>
+            <input class="form-control form-control-1-4" id="other-transactions" name="other-transactions" type="number">
+          </div>
+        </fieldset>
+        
+        <fieldset> 
+
+          <h2 class="bold-medium">Outcomes</h2>
+
+          <div class="form-group">
+            <label class="form-label" for="transactions-ending-in-an-outome">
+              <details>
+                <summary>
+                  <span class="summary">
+                    Transactions ending in an outcome
+                  </span>
+                </summary>
+                <div class="panel">
+                  <p>The number of transactions that ended with the user’s status with government being updated.</p>
+
+                  <p>For example, the user applies for a benefit and is either accepted or rejected. Even if the application is rejected, this is still a change and so a transaction has taken place.</p>
+                </div>
+              </details>  
+            </label>
+            <input class="form-control form-control-1-4" id="transactions-ending-in-an-outome" name="transactions-ending-in-an-outome" type="number">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="transactions-ending-in-the-users-intended-outome">
+              <details>
+                <summary>
+                  <span class="summary">
+                    Transactions ending in the user's intended outcome
+                  </span>
+                </summary>
+                <div class="panel">
+                  <p>The number of transactions that ended with the user reaching the outcome they set out to achieve. For example, the user applies for a benefit and is accepted.</p>
+                </div>
+              </details>  
+            </label>
+            <input class="form-control form-control-1-4" id="transactions-ending-in-the-users-intended-outome" name="transactions-ending-in-the-users-intended-outome" type="number">
+          </div>
+
+        </fieldset>  
+
+        <fieldset>
+
+          <h2 class="bold-medium">Calls</h2>
+
+          <div class="form-group">
+            <label class="form-label" for="calls-received">
+              <details>
+                <summary>
+                  <span class="summary">
+                    Calls received
+                  </span>
+                </summary>
+                <div class="panel">
+                  <p>The total number of calls your service received.</p>
+                </div>
+              </details>  
+            </label>
+            <input class="form-control form-control-1-4" id="calls-received" name="calls-received" type="number">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="to-get-information">
+              <details>
+                <summary>
+                  <span class="summary">
+                    To get information
+                  </span>
+                </summary>
+                <div class="panel">
+                  User called to get information - to check eligibility, for example, or ask for information they couldn’t get online
+                </div>
+              </details>  
+            </label>
+            <input class="form-control form-control-1-4" id="to-get-information" name="to-get-information" type="number">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="to-chase-progress">
+              <details>
+                <summary>
+                  <span class="summary">
+                    To chase progress
+                  </span>
+                </summary>
+                <div class="panel">
+                  User called to chase progress
+                </div>
+              </details>  
+            </label>
+            <input class="form-control form-control-1-4" id="to-chase-progress" name="to-chase-progress" type="number">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="to-challenge-a-decision">
+              <details>
+                <summary>
+                  <span class="summary">
+                    To challenge a decision
+                  </span>
+                </summary>
+                <div class="panel">
+                  User called to challenge a decision
+                </div>
+              </details>  
+            </label>
+            <input class="form-control form-control-1-4" id="to-challenge-a-decision" name="to-challenge-a-decision" type="number">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="other-calls">
+              <details>
+                <summary>
+                  <span class="summary">
+                    Other
+                  </span>
+                </summary>
+                <div class="panel">
+                  For example, the user wanted to make a transaction via the phone, or needed to get help using the service
+                </div>
+              </details>  
+            </label>
+            <input class="form-control form-control-1-4" id="other-calls" name="other-calls" type="number">
+          </div>
+
+        </fieldset>
+      </form>      
+
+      <p>The data will be published on 1 September 2017. If you don't provide it by then, your service's page will go live with missing data.</p>
+
+      <p><a class="button" href="magiclink-success">Submit</a></p>
+
+
+    </div>
+  </div>
+</main>
+{% endblock %}

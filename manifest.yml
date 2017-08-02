@@ -1,0 +1,7 @@
+
+---
+applications:
+- name: gsd-publish-data
+  buildpack: nodejs_buildpack
+  command: npm start
+  memory: 256M
