@@ -1,0 +1,119 @@
+{% extends "layouts/govuk-registers.html" %}
+
+{% set section = "index" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="navigation-service">
+    <div class="navigation-service-name">
+      Name of service
+    </div>
+  </div>
+
+  <div class="grid-row">
+
+    <div class="column-one-quarter"#>
+      <nav class="navigation">
+        <ul>
+          <li><a href="task-list">Tasks</a></li>
+          <li><a href="contacts">Manage contacts</a></li>
+          <li><a href="monitor">Check uploads</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="column-three-quarters column-minimum">
+
+      <h1 class="heading-large heading-account">
+        Manage data sources
+      </h1>
+
+      <p>Delegate responsibility for publishing data to others.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Metric</th>
+            <th scope="col">Source</th>
+            <th class="numeric" scope="col">
+              <span class="visuallyhidden">
+                Action
+              </span>  
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">Online transactions</td>
+            <td>You</td>
+            <td class="numeric"><a href="#">Change</a></td>
+          </tr>
+          <tr>
+            <td scope="row">Phone transactions</td>
+            <td>You</td>
+            <td class="numeric"><a href="#">Change</a></td>
+          </tr>
+          <tr>
+            <td scope="row">Paper transactions</td>
+            <td>You</td>
+            <td class="numeric"><a href="#">Change</a></td>
+          </tr>
+          <tr>
+            <td scope="row">Face-to-face transactions</td>
+            <td>You</td>
+            <td class="numeric"><a href="#">Change</a></td>
+          </tr>
+          <tr>
+            <td scope="row">Other transactions</td>
+            <td>You</td>
+            <td class="numeric"><a href="#">Change</a></td>
+          </tr>
+          <tr>
+            <td scope="row">Transactions ending in an outcome</td>
+            <td>You</td>
+            <td class="numeric"><a href="#">Change</a></td>
+          </tr>
+          <tr>
+            <td scope="row">Transactions ending in the user's intended outcome</td>
+            <td>You</td>
+            <td class="numeric"><a href="#">Change</a></td>
+          </tr>
+          <tr>
+            <td scope="row">Calls received</td>
+            <td>You</td>
+            <td class="numeric"><a href="#">Change</a></td>
+          </tr>
+          <tr>
+            <td scope="row">Calls to get information</td>
+            <td>You</td>
+            <td class="numeric"><a href="#">Change</a></td>
+          </tr>
+          <tr>
+            <td scope="row">Calls to get chase progress</td>
+            <td>You</td>
+            <td class="numeric"><a href="#">Change</a></td>
+          </tr>
+          <tr>
+            <td scope="row">Calls to get challenge a decision</td>
+            <td>You</td>
+            <td class="numeric"><a href="#">Change</a></td>
+          </tr>
+          <tr>
+            <td scope="row">Other calls</td>
+            <td>You</td>
+            <td class="numeric"><a href="#">Change</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
