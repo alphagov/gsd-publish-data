@@ -1,0 +1,141 @@
+{% extends "layouts/govuk-registers.html" %}
+
+{% set section = "index" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="javascript:history.back()">Back</a>
+
+      <form action="route-one" method="get" class="form">
+
+        <h1 class="heading-large">
+          Which of the KPIs are relevant to your service?
+        </h1>
+
+        <p>Select all that apply. You will be able to change your selections later.</p>
+
+        <h2 class="heading-medium">
+          Transactions received by channel
+        </h2>  
+
+        <div class="form-group">
+          <fieldset>
+            <div class="multiple-choice">
+              <input id="online-transactions" name="online-transactions" type="checkbox" value="online-transactions">
+              <label for="online-transactions">
+                <strong>Online</strong><br>
+                Doesn’t include services where you use an online tool to fill out a paper form or transactions received via web chat
+              </label>
+            </div>
+            <div class="multiple-choice">
+              <input id="phone-transactions" name="phone-transactions" type="checkbox" value="phone-transactions">
+              <label for="phone-transactions">
+                <strong>Phone</strong><br>
+                Doesn’t include IVR or purely informational calls that don’t affect the outcome of a transaction
+              </label>
+            </div>
+            <div class="multiple-choice">
+              <input id="paper-transactions" name="paper-transactions" type="checkbox" value="paper-transactions">
+              <label for="paper-transactions">
+                <strong>Paper</strong><br>
+                The form can be sent in any way including by post, email, fax or uploading
+              </label>
+            </div>
+            <div class="multiple-choice">
+              <input id="face-to-face-transactions" name="face-to-face-transactions" type="checkbox" value="face-to-face-transactions">
+              <label for="face-to-face-transactions">
+                <strong>Face-to-face</strong><br>
+                Doesn’t include handing in a paper form in person
+              </label>
+            </div>
+            <div class="multiple-choice">
+              <input id="other-transactions" name="other-transactions" type="checkbox" value="other-transactions">
+              <label for="other-transactions">
+                <strong>Other</strong><br>
+              </label>
+            </div>
+          </fieldset>
+        </div>
+
+        <h2 class="heading-medium">
+          Outcomes
+        </h2> 
+
+        <div class="form-group">
+          <fieldset>
+            <div class="multiple-choice">
+              <input id="transactions-ending-in-outcome" name="transactions-ending-in-outcome" type="checkbox" value="transactions-ending-in-outcome">
+              <label for="transactions-ending-in-outcome">
+                <strong>Transactions ending in an outcome</strong><br>
+                Doesn’t include services where you use an online tool to fill out a paper form or transactions received via web chat
+              </label>
+            </div>
+            <div class="multiple-choice">
+              <input id="transactions-ending-in-users-intended-outcome" name="transactions-ending-in-users-intended-outcome" type="checkbox" value="transactions-ending-in-users-intended-outcome">
+              <label for="transactions-ending-in-users-intended-outcome">
+                <strong>Transactions ending in the user's intended outcome</strong><br>
+                Doesn’t include IVR or purely informational calls that don’t affect the outcome of a transaction
+              </label>
+            </div>
+          </fieldset>
+        </div>    
+
+        <h2 class="heading-medium">
+          Calls and reasons for calling
+        </h2> 
+
+        <div class="form-group">
+          <fieldset>
+            <div class="multiple-choice">
+              <input id="calls-received" name="calls-received" type="checkbox" value="calls-received">
+              <label for="calls-received">
+                <strong>Calls received</strong><br>
+                The total number of calls your service received
+              </label>
+            </div>
+            <div class="multiple-choice">
+              <input id="to-get-information" name="to-get-information" type="checkbox" value="to-get-information">
+              <label for="to-get-information">
+                <strong>User called to get information</strong><br>
+                To check eligibility, for example, or ask for information they couldn’t get online
+              </label>
+            </div>
+            <div class="multiple-choice">
+              <input id="to-chase-progress" name="to-chase-progress" type="checkbox" value="to-chase-progress">
+              <label for="to-chase-progress">
+                <strong>User called to chase progress</strong>
+              </label>
+            </div>
+            <div class="multiple-choice">
+              <input id="to-challenge-decision" name="to-challenge-decision" type="checkbox" value="to-challenge-decision">
+              <label for="to-challenge-decision">
+                <strong>User called to challenge a decision</strong>
+              </label>
+            </div>
+            <div class="multiple-choice">
+              <input id="to-get-information" name="to-get-information" type="checkbox" value="to-get-information">
+              <label for="to-get-information">
+                <strong>Other</strong><br>
+                For example, the user wanted to make a transaction via the phone, or needed to get help using the service
+              </label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <a class="button" href="task-list">Continue</a>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</main>
+{% endblock %}
