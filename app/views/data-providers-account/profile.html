@@ -11,7 +11,7 @@
 <main id="content" role="main">
 
   <div class="navigation-service">
-    <a href="task-list">Back to Department for Business, Energy and Industrial Strategy</a>
+    <a href="task-list">Back to {{ data['service-name'] }}</a>
   </div>
 
   <div class="grid-row">
@@ -46,7 +46,7 @@
             </td>
             <td class="table-field-center-aligned ">
               <div class="">
-                Firstname Lastname
+                {{ data['name'] }}
               </div>
             </td>
             <td class="table-field-right-aligned ">
@@ -63,7 +63,7 @@
             </td>
             <td class="table-field-center-aligned ">
               <div class="">
-                firstname.lastname@government.email.gov.uk
+                {{ data['email'] }}
               </div>
             </td>
             <td class="table-field-right-aligned ">
