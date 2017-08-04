@@ -12,7 +12,7 @@
 
   <div class="navigation-service">
     <div class="navigation-service-name">
-      Name of service
+      {{ data['service-name'] }}
     </div>
   </div>
 
@@ -22,7 +22,7 @@
       <nav class="navigation">
         <ul>
           <li><a href="task-list">Tasks</a></li>
-          <li><a href="contacts">Manage contacts</a></li>
+          <li><a href="Manage data sources">Manage data sources</a></li>
           <li><a href="monitor">Check uploads</a></li>
         </ul>
       </nav>
@@ -36,11 +36,13 @@
 
       <p>Delegate responsibility for publishing data to others.</p>
 
+      <p>If you have direct access to all of the data, you don't need to do anything.</p>
+
       <table>
         <thead>
           <tr>
-            <th scope="col">Metric</th>
-            <th scope="col">Source</th>
+            <th scope="col">KPI</th>
+            <th scope="col">Data source</th>
             <th class="numeric" scope="col">
               <span class="visuallyhidden">
                 Action
@@ -52,62 +54,62 @@
           <tr>
             <td scope="row">Online transactions</td>
             <td>You</td>
-            <td class="numeric"><a href="#">Change</a></td>
+            <td class="numeric"><a href="edit-data-source">Change</a></td>
           </tr>
           <tr>
             <td scope="row">Phone transactions</td>
             <td>You</td>
-            <td class="numeric"><a href="#">Change</a></td>
+            <td class="numeric"><a href="edit-data-source">Change</a></td>
           </tr>
           <tr>
             <td scope="row">Paper transactions</td>
             <td>You</td>
-            <td class="numeric"><a href="#">Change</a></td>
+            <td class="numeric"><a href="edit-data-source">Change</a></td>
           </tr>
           <tr>
             <td scope="row">Face-to-face transactions</td>
             <td>You</td>
-            <td class="numeric"><a href="#">Change</a></td>
+            <td class="numeric"><a href="edit-data-source">Change</a></td>
           </tr>
           <tr>
             <td scope="row">Other transactions</td>
             <td>You</td>
-            <td class="numeric"><a href="#">Change</a></td>
+            <td class="numeric"><a href="edit-data-source">Change</a></td>
           </tr>
           <tr>
             <td scope="row">Transactions ending in an outcome</td>
             <td>You</td>
-            <td class="numeric"><a href="#">Change</a></td>
+            <td class="numeric"><a href="edit-data-source">Change</a></td>
           </tr>
           <tr>
             <td scope="row">Transactions ending in the user's intended outcome</td>
             <td>You</td>
-            <td class="numeric"><a href="#">Change</a></td>
+            <td class="numeric"><a href="edit-data-source">Change</a></td>
           </tr>
           <tr>
             <td scope="row">Calls received</td>
             <td>You</td>
-            <td class="numeric"><a href="#">Change</a></td>
+            <td class="numeric"><a href="edit-data-source">Change</a></td>
           </tr>
           <tr>
             <td scope="row">Calls to get information</td>
             <td>You</td>
-            <td class="numeric"><a href="#">Change</a></td>
+            <td class="numeric"><a href="edit-data-source">Change</a></td>
           </tr>
           <tr>
             <td scope="row">Calls to get chase progress</td>
             <td>You</td>
-            <td class="numeric"><a href="#">Change</a></td>
+            <td class="numeric"><a href="edit-data-source">Change</a></td>
           </tr>
           <tr>
             <td scope="row">Calls to get challenge a decision</td>
             <td>You</td>
-            <td class="numeric"><a href="#">Change</a></td>
+            <td class="numeric"><a href="edit-data-source">Change</a></td>
           </tr>
           <tr>
             <td scope="row">Other calls</td>
             <td>You</td>
-            <td class="numeric"><a href="#">Change</a></td>
+            <td class="numeric"><a href="edit-data-source">Change</a></td>
           </tr>
         </tbody>
       </table>

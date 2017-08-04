@@ -224,7 +224,7 @@ strong {
 .breadcrumb {
   padding: 0.75em 0;
   z-index: 50;
-  background-color: #fff;
+  background-color: $white;
 }
 
 .breadcrumb ol {
@@ -524,7 +524,7 @@ a.js-header-toggle.menu.js-hidden {
 }
 
 .admin{
-  background: #005ea5;
+  background: $govuk-blue;
   text-transform: uppercase;
   font-size: 14px;
   padding: 3px 10px 0 10px;
@@ -674,12 +674,7 @@ a.js-header-toggle.menu.js-hidden {
 /* missing tag */
 
 .task-missing {
-  @include phase-tag;
-
-  background-color: $error-colour;
-  float: right;
-  margin-right: 0;
-  padding-top: 3px;
+  color: $error-colour;
 }
 
 /* service manual uses different type scale WTF */
@@ -710,3 +705,57 @@ a.js-header-toggle.menu.js-hidden {
 fieldset > h2 {
   margin: 15px 0 10px;
 }
+
+/* dashboard summary numbers */
+
+.big-number-with-status {
+  position: relative;
+  margin: 15px 0 45px;
+
+    .big-number-label {
+      padding-bottom: 0;
+    }
+
+    .big-number-link {
+      text-decoration: none;
+      background: $govuk-blue;
+      color: $white;
+      display: block;
+      border: 2px solid $govuk-blue;
+      margin-bottom: 5px;
+
+    .big-number-label {
+      text-decoration: underline;
+    }
+
+  }
+
+  .big-number-with-status:hover {
+    color: #d5e8f3;
+  }
+
+  .big-number {
+    padding: 15px;
+    position: relative;
+    color: $white;
+  }
+}
+
+.big-number-number {
+  // font-family: "ntatabularnumbers","nta",Arial,sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 36px;
+  line-height: 1.09375;
+  display: block;
+
+  @media (min-width: 641px){
+    font-size: 48px;
+    line-height: 1.04167;
+  }
+
+  span {
+    font-size: 28px;
+  }
+}
+
