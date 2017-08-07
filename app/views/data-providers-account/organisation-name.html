@@ -33,13 +33,11 @@
 
       <!-- <form class="form">
 
-        <h1 class="form-title heading-large">Location picker</h1>
-
         <div class="form-group">
-          <label class="form-label-bold" for="location-select-dropdown">
+          <label class="form-label-bold visuallyhidden" for="location-select-dropdown">
               What was the last country you visited?
           </label>
-          <div class="form-control-1-2">
+          <div class="form-control-3-4">
             <select class="form-control" id="location-select-dropdown">
               <option value="" disabled selected>
                 Choose a location
@@ -73,7 +71,7 @@
   <script type="text/javascript" src="https://unpkg.com/registers-picker-engine@0.0.2"></script>
   <script type="text/javascript" src="https://unpkg.com/accessible-typeahead@0.4.1"></script>
   <script type="text/javascript">
-    var dataFilePath = '/public/data/picker-data-orgs.json'
+    var dataFilePath = '/public/data/picker-data-4.json'
     AccessibleTypeahead.enhanceSelectElement({
       autoselect: true,
       selectElement: document.getElementById('location-select-dropdown'),
@@ -81,5 +79,4 @@
       source: locationPickerSuggestions(dataFilePath)
     })
   </script>
-{% endblock %}
- -->
+{% endblock %} -->
