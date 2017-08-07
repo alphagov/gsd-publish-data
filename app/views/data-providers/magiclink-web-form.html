@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block page_title %}
-  
+Provide data for the period 1 to 31 July 2017  
 {% endblock %}
 
 {% block content %}
@@ -19,91 +19,45 @@
       </h1>
 
       <p>
-       Here's a <a href="service-manual">reminder of what you need to provide</a>
-        
+       Here's a <a href="../service-manual">reminder of what you need to provide</a>.
       </p>
 
       <form>
         <fieldset>          
-          <h2 class="bold-medium">Transactions received split by channel</h2>
-          These numbers help users see which channels are used the most.
+          <!-- <h2 class="bold-medium">Transactions received split by channel</h2>
+          These numbers help users see which channels are used the most. -->
 
           <div class="form-group">
             <label class="form-label" for="online-transactions">
-              <details>
-                <summary>
-                  <span class="summary">
-                    Online
-                  </span>
-                </summary>
-                <div class="panel">
-                  Do not include transactions where an online tool was used to fill out a paper form, or transactions received via web chat.
-                </div>
-              </details>  
+              Online  
             </label>
             <input class="form-control form-control-1-4" id="online-transactions" name="online-transactions" type="number">
           </div>
 
           <div class="form-group">
             <label class="form-label" for="phone-transactions">
-              <details>
-                <summary>
-                  <span class="summary">
-                    Phone
-                  </span>
-                </summary>
-                <div class="panel">
-                  Do not include purely informational calls that don’t affect the outcome of a transaction
-                </div>
-              </details>  
+              Phone 
             </label>
             <input class="form-control form-control-1-4" id="phone-transactions" name="phone-transactions" type="number">
           </div>
 
           <div class="form-group">
             <label class="form-label" for="paper-transactions">
-              <details>
-                <summary>
-                  <span class="summary">
-                    Paper
-                  </span>
-                </summary>
-                <div class="panel">
-                  Paper form — include any sending method (post, email, fax, uploading)
-                </div>
-              </details>  
-            </label>
+              Paper
+            </label>  
             <input class="form-control form-control-1-4" id="paper-transactions" name="paper-transactions" type="number">
           </div>
 
           <div class="form-group">
             <label class="form-label" for="face-to-face-transactions">
-              <details>
-                <summary>
-                  <span class="summary">
-                    Face-to-face
-                  </span>
-                </summary>
-                <div class="panel">
-                  Do not include transactions where the user handed in a paper form in person
-                </div>
-              </details>  
+              Face-to-face
             </label>
             <input class="form-control form-control-1-4" id="paper-transactions" name="paper-transactions" type="number">
           </div>
 
           <div class="form-group">
             <label class="form-label" for="other-transactions">
-              <details>
-                <summary>
-                  <span class="summary">
-                    Other
-                  </span>
-                </summary>
-                <div class="panel">
-                  ???
-                </div>
-              </details>  
+              Other  
             </label>
             <input class="form-control form-control-1-4" id="other-transactions" name="other-transactions" type="number">
           </div>
@@ -111,35 +65,16 @@
         
         <fieldset> 
 
-          <h2 class="bold-medium">Transactions ending in an outcome</h2>
-          
-<p>This number provides an indication of how well the service is meeting users’ needs</p>
           <div class="form-group">
             <label class="form-label" for="transactions-ending-in-an-outome">
-              <details>
-                <summary>
-                  <span class="summary">
-                   
-                </summary>
-                                </div>
-              </details>  
+              Transactions ending in an outcome
             </label>
             <input class="form-control form-control-1-4" id="transactions-ending-in-an-outome" name="transactions-ending-in-an-outome" type="number">
           </div>
 
           <div class="form-group">
             <label class="form-label" for="transactions-ending-in-the-users-intended-outome">
-              <details>
-                <summary>
-                  <span class="summary">
-                    <h2 class="bold-medium"> Transactions ending in the user's intended outcome</h2>
-                <p>As above</p>               
-                  
-                  </span>
-                </summary>
-                <div class="panel">                  
-                </div>
-              </details>  
+              Transactions ending in the user's intended outcome
             </label>
             <input class="form-control form-control-1-4" id="transactions-ending-in-the-users-intended-outome" name="transactions-ending-in-the-users-intended-outome" type="number">
           </div>
@@ -148,84 +83,39 @@
 
         <fieldset>
 
-          <h2 class="bold-medium">Reasons for calling</h2>
+          <!-- <h2 class="bold-medium">Reasons for calling</h2> -->
 
           <div class="form-group">
             <label class="form-label" for="calls-received">
-              <details>
-                <summary>
-                  <span class="summary">
-                    Calls received
-                  </span>
-                </summary>
-                <div class="panel">
-                  <p>The total number of calls your service received.</p>
-                </div>
-              </details>  
+              Calls received 
             </label>
             <input class="form-control form-control-1-4" id="calls-received" name="calls-received" type="number">
           </div>
 
           <div class="form-group">
             <label class="form-label" for="to-get-information">
-              <details>
-                <summary>
-                  <span class="summary">
-                    To get information
-                  </span>
-                </summary>
-                <div class="panel">
-                  User called to get information - to check eligibility, for example, or ask for information they couldn’t get online
-                </div>
-              </details>  
+              To get information 
             </label>
             <input class="form-control form-control-1-4" id="to-get-information" name="to-get-information" type="number">
           </div>
 
           <div class="form-group">
             <label class="form-label" for="to-chase-progress">
-              <details>
-                <summary>
-                  <span class="summary">
-                    To chase progress
-                  </span>
-                </summary>
-                <div class="panel">
-                  User called to chase progress
-                </div>
-              </details>  
+              To chase progress 
             </label>
             <input class="form-control form-control-1-4" id="to-chase-progress" name="to-chase-progress" type="number">
           </div>
 
           <div class="form-group">
             <label class="form-label" for="to-challenge-a-decision">
-              <details>
-                <summary>
-                  <span class="summary">
-                    To challenge a decision
-                  </span>
-                </summary>
-                <div class="panel">
-                  User called to challenge a decision
-                </div>
-              </details>  
+              To challenge a decision 
             </label>
             <input class="form-control form-control-1-4" id="to-challenge-a-decision" name="to-challenge-a-decision" type="number">
           </div>
 
           <div class="form-group">
             <label class="form-label" for="other-calls">
-              <details>
-                <summary>
-                  <span class="summary">
-                    Other
-                  </span>
-                </summary>
-                <div class="panel">
-                  For example, the user wanted to make a transaction via the phone, or needed to get help using the service
-                </div>
-              </details>  
+              Other 
             </label>
             <input class="form-control form-control-1-4" id="other-calls" name="other-calls" type="number">
           </div>
@@ -233,8 +123,7 @@
         </fieldset>
       </form>      
 
-      <p>Your data will be published on 1 September 2017.
-</p>
+      <p>Your data will be published on 1 September 2017.</p>
 
       <p><a class="button" href="magiclink-success">Submit</a></p>
 
