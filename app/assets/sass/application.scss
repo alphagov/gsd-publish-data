@@ -572,7 +572,7 @@ a.js-header-toggle.menu.js-hidden {
   }
 }
 
-/* side nav in admin */
+// side nav in admin
 
 .navigation {
   padding: 0 30px 0 0;
@@ -587,13 +587,13 @@ a.js-header-toggle.menu.js-hidden {
   }
 }
 
-/* account tuff */
+// account stuff
 
 .heading-account {
   margin: 10px 0 15px 0;
 }
 
-/* spreadsheet example */
+// spreadsheet example
 
 .spreadsheet {
 
@@ -621,7 +621,7 @@ a.js-header-toggle.menu.js-hidden {
   }
 }
 
-/* fake drag and drop */
+// fake drag and drop
 
 .drag-and-drop {
   width: 100%;
@@ -655,7 +655,7 @@ a.js-header-toggle.menu.js-hidden {
   }
 }
 
-/* changes to error messages */
+// changes to error messages
 
 .error-summary {
   color: $error-colour;
@@ -671,13 +671,13 @@ a.js-header-toggle.menu.js-hidden {
   }
 }
 
-/* missing tag */
+// missing tag
 
 .task-missing {
   color: $error-colour;
 }
 
-/* service manual uses different type scale WTF */
+// service manual uses different type scale WTF
 
 .sm {
   font-size: 27px;
@@ -687,26 +687,34 @@ a.js-header-toggle.menu.js-hidden {
 /* preview banner */
 
 .preview-banner {
-  border: 5px $turquoise solid;
-  margin: 30px 0;
+  color: $white;
+  background-color: $govuk-blue;
+  margin-top: -10px;
 
-  h1 {
-    padding: 15px
-  }
+  div {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px 0 5px;
 
-  p {
-    padding: 0 15px
+    p { 
+      font-size: 19px;
+    }
+
+    a {
+      color: #fff;
+    }
+
   }
 
 }
 
-/* spacing for form email */
+// spacing for form email
 
 fieldset > h2 {
   margin: 15px 0 10px;
 }
 
-/* dashboard summary numbers */
+// dashboard summary numbers
 
 .big-number-with-status {
   position: relative;
@@ -758,4 +766,34 @@ fieldset > h2 {
     font-size: 28px;
   }
 }
+
+// summary for data provision
+
+.publish-data-dates {
+  font-size: 16px;
+
+  dt {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+  }
+
+  dd {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+
+  dd:first-letter {
+    text-transform: uppercase;
+  }
+
+  dl {
+    margin: 0 0 15px;
+  }
+
+}
+
+
+
 
