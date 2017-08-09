@@ -676,6 +676,7 @@ a.js-header-toggle.menu.js-hidden {
 
 .task-missing {
   color: $error-colour;
+  font-weight: 700;
 }
 
 // service manual uses different type scale WTF
@@ -721,33 +722,32 @@ fieldset > h2 {
   position: relative;
   margin: 15px 0 45px;
 
-    .big-number-label {
-      padding-bottom: 0;
-    }
-
-    .big-number-link {
-      text-decoration: none;
-      background: $govuk-blue;
-      color: $white;
-      display: block;
-      border: 2px solid $govuk-blue;
-      margin-bottom: 5px;
-
-    .big-number-label {
-      text-decoration: underline;
-    }
-
+  .big-number-label {
+    padding-bottom: 0;
   }
 
-  .big-number-with-status:hover {
+  .big-number-link {
+    text-decoration: none;
+    background: $govuk-blue;
+    color: $white;
+    display: block;
+    border: 2px solid $govuk-blue;
+    margin-bottom: 5px;
+  }
+
+  a:hover {
     color: #d5e8f3;
+  }
+
+  .big-number-label {
+    text-decoration: underline;
   }
 
   .big-number {
     padding: 15px;
     position: relative;
-    color: $white;
   }
+
 }
 
 .big-number-number {
@@ -795,6 +795,48 @@ fieldset > h2 {
 
 }
 
+// vertical align table to top
 
+.table-align-top {
 
+  td {
+    vertical-align: top;
+  }
+  
+}
 
+// ticks for metrics
+
+.tick-cross-tick, .tick-cross-cross {
+  background-size: auto 20px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding: 0 0 0 28px;
+}
+
+.tick-cross-tick {
+  background-image: url('../images/tick-icon.png');
+}
+
+.tick-cross-cross {
+  background-image: url('../images/cross-icon.png');
+}
+
+.which-metric {
+
+  tr {
+
+    td:first-of-type {
+      font-weight: bold;
+    }
+    
+  }
+}
+
+.metric-disabled {
+
+  td {
+    color: $secondary-text-colour;
+  }
+  
+}

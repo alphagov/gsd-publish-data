@@ -21,9 +21,9 @@
       <nav class="navigation">
         <ul>
           <li><a href="task-list">Dashboard</a></li>
+          <li><a href="monitor">This month's uploads</a></li>
+          <li><a href="edit-previous-entries">Edit historical data</a></li>
           <li><a href="manage-data-sources">Manage data sources</a></li>
-          <li><a href="monitor">Check uploads</a></li>
-          <li><a href="edit-previous-entries">Edit previous entries</a></li>
         </ul>
       </nav>
     </div>
@@ -34,77 +34,125 @@
           Which of the KPIs apply to your service?
         </h1>
 
-        <p>Remove any KPIs that don't apply. For example, if your service doesn't receive any transactions over the phone. You will be able to change your selections later.</p>
-  
+        <p>Remove any KPIs that don't apply. For example, if your service doesn't receive any transactions over the phone. This is so that you only receive relevant requests for data.</p>
 
+        <p>You can change your selections at any time.</p>
 
-        <table>
+        <table class="table table-align-top">
           <thead>
             <tr>
               <th scope="col" width="30%">KPI</th>
-              <th scope="col">Description</th>
-              <th scope="col"><span class="visuallyhidden">Action</span></th>
+              <th scope="col" width="55%">Description</th>
+              <th scope="col"><span class="visuallyhidden">Get requests</span></th>
           </thead>
-          <tbody>
+          <tbody class="which-metric">
             <tr>
               <td>Transactions received online</td>
               <td>Doesn’t include services where you use an online tool to fill out a paper form or transactions received via web chat</td>
-              <td><a href="#">Remove</a></td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
             </tr>
             <tr>
               <td>Transactions received by phone</td>
               <td>Doesn’t include IVR or purely informational calls that don’t affect the outcome of a transaction</td>
-              <td><a href="#">Remove</a></td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
             </tr>
             <tr>
               <td>Transactions received by paper</td>
               <td>The form can be sent in any way including by post, email, fax or uploading</td>
-              <td><a href="#">Remove</a></td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
             </tr>  
             <tr>
               <td>Transactions received face-to-face</td>
               <td>Doesn’t include handing in a paper form in person</td>
-              <td><a href="#">Remove</a></td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
             </tr>
             <tr>
               <td>Other transactions</td>
               <td>Doesn’t include handing in a paper form in person</td>
-              <td><a href="#">Remove</a></td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
             </tr>
             <tr>
               <td>Transactions ending in an outcome</td>
               <td>For example, the user applies for a benefit and is either accepted or rejected. Even if the application is rejected, this is still a change and so a transaction has taken place.</td>
-              <td><a href="#">Remove</a></td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
             </tr>
             <tr>
               <td>Transactions ending in the user's intended outcome</td>
               <td>The number of transactions that ended with the user reaching the outcome they set out to achieve. For example, the user applies for a benefit and is accepted.</td>
-              <td><a href="#">Remove</a></td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
             </tr>
             <tr>
               <td>Calls received</td>
               <td>The total number of calls your service received</td>
-              <td><a href="#">Remove</a></td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
             </tr> 
             <tr>
               <td>Calls to get information</td>
               <td>To check eligibility, for example, or ask for information they couldn’t get online</td>
-              <td><a href="#">Remove</a></td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
             </tr>
             <tr>
               <td>Calls to chase progress</td>
               <td>User called to chase the progress or status of something</td>
-              <td><a href="#">Remove</a></td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
             </tr>
             <tr>
               <td>Calls to challenge a decision</td>
               <td>User called to challenge a decision</td>
-              <td><a href="#">Remove</a></td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
             </tr>
             <tr>
               <td>Other calls</td>
               <td>For example, the user wanted to make a transaction via the phone, or needed to get help using the service</td>
-              <td><a href="#">Remove</a></td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
             </tr>
           </tbody>
         </table>
