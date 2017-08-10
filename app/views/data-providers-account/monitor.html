@@ -1,0 +1,184 @@
+{% extends "layouts/govuk-registers.html" %}
+
+{% set section = "index" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="navigation-service">
+    <div class="navigation-service-name">
+      {{ data['service-name'] }}
+    </div>
+  </div>
+
+  <div class="grid-row">
+
+    <div class="column-one-quarter">
+      <nav class="navigation">
+        <ul>
+          <li><a href="task-list">Dashboard</a></li>
+          <li><a href="monitor">This month's uploads</a></li>
+          <li><a href="edit-previous-entries">Edit historical data</a></li>
+          <li><a href="manage-data-sources">Manage data sources</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="column-three-quarters">
+
+      <div class="grid-row">
+        <div class="column-two-thirds">
+          <h1 class="heading-large heading-account">
+            This month's uploads
+          </h1>
+        </div>
+        <div class="column-thirds"> 
+          
+        </div>
+      </div>    
+      
+      <div class="grid-row">
+        <div class="column-full">
+          <div class="publish-data-dates">
+            <dl>
+              <dt>Data for:</dt>
+              <dd>
+                1 to 31 July 2017
+              </dd>
+              <dt>Provide by:</dt>
+              <dd>
+                31 August 2017
+              </dd>
+              <dt>To be published on:</dt>
+              <dd>
+                1 September 2017
+              </dd>
+            </dl>  
+          </div>
+        </div>
+        <!-- <div class="column-third">
+          <p>
+            <strong>Data for</strong>
+            <br>
+            1 to 31 July 2017
+          </p>  
+        </div>
+        <div class="column-third">
+          <p>
+            <strong>Upload by</strong>
+            <br>
+            31 August 2017
+          </p>  
+        </div>
+        <div class="column-third">
+          <p>
+            <strong>To be published on</strong>
+            <br>
+            1 September 2017
+          </p>  
+        </div> -->
+      </div>
+
+      <p>
+        <a class="button" href="preview-data">Preview this month's data</a>
+      </p>  
+
+      <table>
+        <thead>
+          <tr>
+            <th scope="col" width="40%">KPI</th>
+            <th scope="col">Data source</th>
+            <th scope="col">Entry</th>
+            <th scope="col" colspan="2"><span class="visuallyhidden">Actions</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Transactions ending in an outcome</td> 
+            <td>You</td>                
+            <td class="task-missing">Missing</td>
+            <td class="numeric" colspan="2"><a href="#">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Transactions ending in the user's intended outcome</td>
+            <td>Someone Else</td> 
+            <td class="task-missing">Missing</td>
+            <td class="numeric"><a href="mailto:example@email.com">Contact</a></td>
+            <td class="numeric"><a href="#">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Online transactions</td>
+            <td>You</td>
+            <td class="numeric">201,087</td>
+            <td class="numeric" colspan="2"><a href="#">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Phone transactions</td>
+            <td>You</td>
+            <td class="numeric">55,986</td>
+            <td class="numeric" colspan="2"><a href="#">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Paper transactions</td>
+            <td>You</td>
+            <td class="numeric">12</td>
+            <td class="numeric" colspan="2"><a href="#">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Face-to-face transactions</td>
+            <td>You</td>
+            <td class="numeric">208</td>
+            <td class="numeric" colspan="2"><a href="#">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Other transactions</td>
+            <td>You</td>
+            <td class="numeric">0</td>
+            <td class="numeric" colspan="2"><a href="#">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Calls received</td>
+            <td>You</td>
+            <td class="numeric">109,123</td>
+            <td class="numeric" colspan="2"><a href="#">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Calls to get information</td>
+            <td>You</td>
+            <td class="numeric">50,123</td>
+            <td class="numeric" colspan="2"><a href="#">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Calls to chase progress</td>
+            <td>You</td>
+            <td class="numeric">3,577</td>
+            <td class="numeric" colspan="2"><a href="#">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Calls to challenge a decision</td>
+            <td>You</td>
+            <td class="numeric">1,577</td>
+            <td class="numeric" colspan="2"><a href="#">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Other calls</td>
+            <td>You</td>
+            <td class="numeric">55,986</td>
+            <td class="numeric" colspan="2"><a href="#">Edit</a></td>
+          </tr>
+        </tbody>
+      </table>   
+
+    </div>
+
+  </div>
+</main>
+
+{% endblock %}
+
+

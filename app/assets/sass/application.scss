@@ -9,6 +9,7 @@ $path: "/public/images/";
 // Take a look at in app/assets/sass/patterns/ to see which files are imported.
 @import 'patterns/check-your-answers';
 @import 'patterns/task-list';
+@import 'patterns/spacing';
 
 // Related items
 // (These styles will be moved to GOV.UK elements, duplicating here for now.)
@@ -224,7 +225,7 @@ strong {
 .breadcrumb {
   padding: 0.75em 0;
   z-index: 50;
-  background-color: #fff;
+  background-color: $white;
 }
 
 .breadcrumb ol {
@@ -524,7 +525,7 @@ a.js-header-toggle.menu.js-hidden {
 }
 
 .admin{
-  background: #005ea5;
+  background: $govuk-blue;
   text-transform: uppercase;
   font-size: 14px;
   padding: 3px 10px 0 10px;
@@ -572,7 +573,7 @@ a.js-header-toggle.menu.js-hidden {
   }
 }
 
-/* side nav in admin */
+// side nav in admin
 
 .navigation {
   padding: 0 30px 0 0;
@@ -587,13 +588,13 @@ a.js-header-toggle.menu.js-hidden {
   }
 }
 
-/* account tuff */
+// account stuff
 
 .heading-account {
   margin: 10px 0 15px 0;
 }
 
-/* spreadsheet example */
+// spreadsheet example
 
 .spreadsheet {
 
@@ -621,7 +622,7 @@ a.js-header-toggle.menu.js-hidden {
   }
 }
 
-/* fake drag and drop */
+// fake drag and drop
 
 .drag-and-drop {
   width: 100%;
@@ -655,7 +656,7 @@ a.js-header-toggle.menu.js-hidden {
   }
 }
 
-/* changes to error messages */
+// changes to error messages
 
 .error-summary {
   color: $error-colour;
@@ -671,18 +672,14 @@ a.js-header-toggle.menu.js-hidden {
   }
 }
 
-/* missing tag */
+// missing tag
 
 .task-missing {
-  @include phase-tag;
-
-  background-color: $error-colour;
-  float: right;
-  margin-right: 0;
-  padding-top: 3px;
+  color: $error-colour;
+  font-weight: 700;
 }
 
-/* service manual uses different type scale WTF */
+// service manual uses different type scale WTF
 
 .sm {
   font-size: 27px;
@@ -692,21 +689,163 @@ a.js-header-toggle.menu.js-hidden {
 /* preview banner */
 
 .preview-banner {
-  border: 5px $turquoise solid;
-  margin: 30px 0;
+  color: $white;
+  background-color: $govuk-blue;
+  margin-top: -10px;
 
-  h1 {
-    padding: 15px
-  }
+  div {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px 0 5px;
 
-  p {
-    padding: 0 15px
+    p { 
+      font-size: 19px;
+    }
+
+    h1 {
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: #fff;
+    }
+
   }
 
 }
 
-/* spacing for form email */
+// spacing for form email
 
 fieldset > h2 {
   margin: 15px 0 10px;
+}
+
+// dashboard summary numbers
+
+.big-number-with-status {
+  position: relative;
+  margin: 15px 0 45px;
+
+  .big-number-label {
+    padding-bottom: 0;
+  }
+
+  .big-number-link {
+    text-decoration: none;
+    background: $govuk-blue;
+    color: $white;
+    display: block;
+    border: 2px solid $govuk-blue;
+    margin-bottom: 5px;
+  }
+
+  a:hover {
+    color: #d5e8f3;
+  }
+
+  .big-number-label {
+    text-decoration: underline;
+  }
+
+  .big-number {
+    padding: 15px;
+    position: relative;
+  }
+
+}
+
+.big-number-number {
+  // font-family: "ntatabularnumbers","nta",Arial,sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 36px;
+  line-height: 1.09375;
+  display: block;
+
+  @media (min-width: 641px){
+    font-size: 48px;
+    line-height: 1.04167;
+  }
+
+  span {
+    font-size: 28px;
+  }
+}
+
+// summary for data provision
+
+.publish-data-dates {
+  font-size: 16px;
+
+  dt {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+  }
+
+  dd {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+
+  dd:first-letter {
+    text-transform: uppercase;
+  }
+
+  dl {
+    margin: 0 0 15px;
+  }
+
+}
+
+// vertical align table to top
+
+.table-align-top {
+
+  td {
+    vertical-align: top;
+  }
+  
+}
+
+// ticks for metrics
+
+.tick-cross-tick, .tick-cross-cross {
+  background-size: auto 20px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding: 0 0 0 30px;
+
+    a {
+      @include core-16;
+      vertical-align: top;
+    }
+}
+
+.tick-cross-tick {
+  background-image: url('../images/tick-icon.png');
+}
+
+.tick-cross-cross {
+  background-image: url('../images/cross-icon.png');
+}
+
+.which-metric {
+
+  tr {
+
+    td:first-of-type {
+      font-weight: bold;
+    }
+    
+  }
+}
+
+.metric-disabled {
+
+  td {
+    color: $secondary-text-colour;
+  }
+  
 }

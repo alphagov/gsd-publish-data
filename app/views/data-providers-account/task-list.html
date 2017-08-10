@@ -1,0 +1,126 @@
+{% extends "layouts/govuk-registers.html" %}
+
+{% set section = "index" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="navigation-service">
+    <div class="navigation-service-name">
+      {{ data['service-name'] }}
+    </div>
+  </div>
+
+  <div class="grid-row"> 
+
+    <div class="column-one-quarter">
+      <nav class="navigation">
+        <ul>
+          <li><a href="task-list">Dashboard</a></li>
+          <li><a href="monitor">This month's uploads</a></li>
+          <li><a href="edit-previous-entries">Edit historical data</a></li>
+          <li><a href="manage-data-sources">Manage data sources</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="column-three-quarters">
+
+      <div class="grid-row">
+        <div class="column-full">
+          <h1 class="bold-medium mt-10">
+            Dashboard
+          </h1> 
+        </div>  
+      </div>
+
+      <div class="grid-row">
+        <div class="column-one-third">
+          <div class="big-number-with-status">
+            <a class="big-number-link" href="#tasks">
+              <div class="big-number">
+                <div class="big-number-number">
+                  3
+                </div>
+                <span class="big-number-label">tasks to do</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="column-one-third">
+          <div class="big-number-with-status">
+            <a class="big-number-link" href="monitor">
+              <div class="big-number">
+                <div class="big-number-number">
+                  31 Aug
+                </div>
+                <span class="big-number-label">next data deadline</span>
+              </div>
+            </a>
+          </div>
+        </div>  
+        <div class="column-one-third">
+          <div class="big-number-with-status">
+            <a class="big-number-link" href="monitor">
+              <div class="big-number">
+                <div class="big-number-number">
+                  0<span> of </span>11
+                </div>
+                <span class="big-number-label">metrics submitted</span>
+              </div>
+            </a>
+          </div>
+        </div> 
+      </div>
+
+      <div class="grid-row">
+        <div class="column-full">
+
+          <h2 class="bold-medium" id="tasks">
+            Tasks to do
+          </h2>  
+
+          <ol class="task-list">
+            <li>
+              <ul class="task-list-items">
+                <li class="task-list-item">
+                  <a class="task-name" href="profile" aria-describedby="account-completed">
+                    Create account
+                  </a>
+                  <strong class="task-completed" id="account-completed">Completed</strong>
+                </li>
+                <li class="task-list-item">
+                  <a class="task-name" href="add-service-info" aria-describedby="">
+                    Add contextual information about your service
+                  </a>
+                  <!-- <strong class="task-completed" id="information-completed">Completed</strong> -->
+                </li>
+                <li class="task-list-item">
+                  <a class="task-name" href="which-metrics" aria-describedby="">
+                    Check which KPIs apply to your service
+                  </a>
+                  <!-- <strong class="task-completed" id="information-completed">Completed</strong> -->
+                </li>
+                <li class="task-list-item">
+                  <a class="task-name" href="manage-data-sources" aria-describedby="">
+                    Delegate data publishing to others
+                  </a>
+                  <!-- <strong class="task-completed" id="delegation-completed">Completed</strong> -->
+                </li>
+              </ul>
+            </li>
+          </ol>
+
+        </div>  
+      </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

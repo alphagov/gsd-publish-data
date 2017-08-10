@@ -1,0 +1,65 @@
+{% extends "layouts/govuk-registers.html" %}
+
+{% set section = "index" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="javascript:history.back()">Back</a>
+
+      <form action="task-list" method="get" class="form">
+
+        <h2 class="heading-large">
+          Which government organisation delivers this service?
+        </h2>
+
+        <div class="form-group">
+          <label class="form-label visuallyhidden" for="org-name">Organisation</label>
+          <div id="org-name"></div>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+    </div>
+  </div>
+</main>
+{% endblock %}
+
+{% block body_end %}
+  <link rel="stylesheet" media="screen" href="https://unpkg.com/accessible-autocomplete@1.6.0/dist/accessible-autocomplete.min.css" />
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/openregister-picker-engine@1.0.0"></script>
+  <script type="text/javascript" src="https://unpkg.com/accessible-autocomplete@1.6.0"></script>
+  <script type="text/javascript">
+    function inputValueTemplate(result) {
+      return result && result.name
+    }
+    function suggestionTemplate(result) {
+      var path = result && result.path
+        ? ' (' + result.path + ')'
+        : ''
+      return result && result.name + path
+    }
+    accessibleAutocomplete({
+      element: document.querySelector('#org-name'),
+      id: 'orgs-name',
+      source: openregisterPickerEngine({
+        url: '/public/data/picker-data-orgs.json'
+      }),
+      templates: {
+        inputValue: inputValueTemplate,
+        suggestion: suggestionTemplate
+      }
+    });
+  </script>
+{% endblock %}

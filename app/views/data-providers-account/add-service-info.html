@@ -1,0 +1,121 @@
+{% extends "layouts/govuk-registers.html" %}
+
+{% set section = "index" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="navigation-service">
+    <div class="navigation-service-name">
+      {{ data['service-name'] }}
+    </div>
+  </div>
+
+  <div class="grid-row">
+
+    <div class="column-one-quarter">
+      <nav class="navigation">
+        <ul>
+          <li><a href="task-list">Dashboard</a></li>
+          <li><a href="monitor">This month's uploads</a></li>
+          <li><a href="edit-previous-entries">Edit historical data</a></li>
+          <li><a href="manage-data-sources">Manage data sources</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="column-three-quarters column-minimum">
+
+      <h1 class="heading-large heading-account">
+        Information about your service
+      </h1>
+
+      <p>This is used on the Government Service Data website to help users interpret data about your service. Once you save this page the information will be published immediately. You can update this information at any time.</p>
+
+      <form action="task-list">
+        <div class="form-group">
+          <label class="form-label form-control-2-3" for="service-name">
+            Service name
+            <span class="form-hint">Use the name of the service as it appears to users</span>
+          </label>
+          <input class="form-control form-control-2-3" id="service-name" name="service-name" type="test" value="{{ data['service-name'] }}">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label form-control-2-3" for="org-name">
+            Delivery organisation
+          </label>
+          <input class="form-control form-control-2-3" id="org-name" name="org-name" type="test" value="{{ data['input-autocomplete'] }}">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label form-control-2-3" for="org-name">
+            URL of the service
+            <span class="form-hint">The start page on GOV.UK, or a link to a PDF of the paper form if available</span>
+          </label>
+          <input class="form-control form-control-2-3" id="org-name" name="org-name" type="test" value="{{ data['org-name'] }}">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label form-control-2-3" for="service-purpose">
+            The purpose of the service
+            <span class="form-hint">
+              Why it was built, its policy objectives and the user need it meets
+            </span>  
+          </label>
+          <textarea class="form-control form-control-2-3" name="service-purpose" id="service-purpose" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label form-control-2-3" for="how-service-works">
+            How the service works
+            <span class="form-hint">
+              The processes and back-office operations that allow it to function
+            </span>  
+          </label>
+          <textarea class="form-control form-control-2-3" name="how-service-works" id="how-service-works" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label form-control-2-3" for="who-uses-service">
+            Who uses the service
+            <span class="form-hint">
+              Information about the key user groups, such as where they live and the demographic they belong to
+            </span>  
+          </label>
+          <textarea class="form-control form-control-2-3" name="who-uses-service" id="who-uses-service" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label form-control-2-3" for="service-frequency">
+            How frequently the service is used
+          </label>
+          <textarea class="form-control form-control-2-3" name="service-frequency" id="service-frequency" rows="2"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label form-control-2-3" for="time-for-an-outcome">
+            How long it takes to get an outcome
+            <span class="form-hint">
+              How long, on average, it takes transactions handled by your service to end in an outcome
+            </span>
+          </label>
+          <textarea class="form-control form-control-2-3" name="time-for-an-outcome" id="time-for-an-outcome" rows="2"></textarea>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

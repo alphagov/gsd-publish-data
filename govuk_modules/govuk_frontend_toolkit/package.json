@@ -10,7 +10,7 @@
         "spec": "5.1.2",
         "type": "version"
       },
-      "/Users/luciawhittaker/Desktop/Projects/gsd-publish-data"
+      "/Users/christopherthomas/projects/gsd-publish-data"
     ]
   ],
   "_from": "govuk_frontend_toolkit@5.1.2",
@@ -45,7 +45,7 @@
   "_shasum": "d380fbe248e603f3419bb2983a9af54b87a8415c",
   "_shrinkwrap": null,
   "_spec": "govuk_frontend_toolkit@5.1.2",
-  "_where": "/Users/luciawhittaker/Desktop/Projects/gsd-publish-data",
+  "_where": "/Users/christopherthomas/projects/gsd-publish-data",
   "author": {
     "name": "Government Digital Service developers",
     "email": "govuk-dev@digital.cabinet-office.gov.uk"

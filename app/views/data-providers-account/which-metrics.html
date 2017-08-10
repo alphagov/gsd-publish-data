@@ -1,0 +1,168 @@
+{% extends "layouts/govuk-registers.html" %}
+
+{% set section = "index" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="navigation-service">
+    <div class="navigation-service-name">
+      {{ data['service-name'] }}
+    </div>
+  </div>
+
+  <div class="grid-row">
+
+    <div class="column-one-quarter">
+      <nav class="navigation">
+        <ul>
+          <li><a href="task-list">Dashboard</a></li>
+          <li><a href="monitor">This month's uploads</a></li>
+          <li><a href="edit-previous-entries">Edit historical data</a></li>
+          <li><a href="manage-data-sources">Manage data sources</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="column-three-quarters">
+
+        <h1 class="heading-large heading-account">
+          Which of the KPIs apply to your service?
+        </h1>
+
+        <p>You must report all data that applies to your service. Remove any KPIs that don't, so that you only receive relevant requests for data.</p>
+
+        <p>You can update your selections at any time — for example, if your service opens a new channel or no longer takes phone calls.</p>
+
+        <table class="table table-align-top">
+          <thead>
+            <tr>
+              <th scope="col" width="30%">KPI</th>
+              <th scope="col" width="55%">Description</th>
+              <th scope="col"><span class="visuallyhidden">Get requests</span></th>
+          </thead>
+          <tbody class="which-metric">
+            <tr>
+              <td>Transactions received online</td>
+              <td>Doesn’t include services where you use an online tool to fill out a paper form or transactions received via web chat</td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Transactions received by phone</td>
+              <td>Doesn’t include IVR or purely informational calls that don’t affect the outcome of a transaction</td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Transactions received by paper</td>
+              <td>The form can be sent in any way including by post, email, fax or uploading</td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
+            </tr>  
+            <tr>
+              <td>Transactions received face-to-face</td>
+              <td>Doesn’t include handing in a paper form in person</td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Other transactions</td>
+              <td>Doesn’t include handing in a paper form in person</td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Transactions ending in an outcome</td>
+              <td>For example, the user applies for a benefit and is either accepted or rejected. Even if the application is rejected, this is still a change and so a transaction has taken place.</td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Transactions ending in the user's intended outcome</td>
+              <td>The number of transactions that ended with the user reaching the outcome they set out to achieve. For example, the user applies for a benefit and is accepted.</td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Calls received</td>
+              <td>The total number of calls your service received</td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
+            </tr> 
+            <tr>
+              <td>Calls to get information</td>
+              <td>To check eligibility, for example, or ask for information they couldn’t get online</td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Calls to chase progress</td>
+              <td>User called to chase the progress or status of something</td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Calls to challenge a decision</td>
+              <td>User called to challenge a decision</td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Other calls</td>
+              <td>For example, the user wanted to make a transaction via the phone, or needed to get help using the service</td>
+              <td>
+                <span class="tick-cross-tick">
+                  <a href="#">Remove</a>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          <a class="button mt-30" href="task-list">Save changes</a>
+        </p>  
+
+      </form>
+    </div>
+  </div>
+</main>
+{% endblock %}
