@@ -702,6 +702,10 @@ a.js-header-toggle.menu.js-hidden {
       font-size: 19px;
     }
 
+    h1 {
+      margin-bottom: 15px;
+    }
+
     a {
       color: #fff;
     }
@@ -811,7 +815,12 @@ fieldset > h2 {
   background-size: auto 20px;
   background-repeat: no-repeat;
   background-position: 0 0;
-  padding: 0 0 0 28px;
+  padding: 0 0 0 30px;
+
+    a {
+      @include core-16;
+      vertical-align: top;
+    }
 }
 
 .tick-cross-tick {

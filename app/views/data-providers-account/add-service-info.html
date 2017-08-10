@@ -35,7 +35,7 @@
         Information about your service
       </h1>
 
-      <p>This is used on the Government Service Data website to help users interpret data about your service. You can update this at any time.</p>
+      <p>This is used on the Government Service Data website to help users interpret data about your service. Once you save this page the information will be published immediately. You can update this information at any time.</p>
 
       <form action="task-list">
         <div class="form-group">
@@ -49,6 +49,14 @@
         <div class="form-group">
           <label class="form-label form-control-2-3" for="org-name">
             Delivery organisation
+          </label>
+          <input class="form-control form-control-2-3" id="org-name" name="org-name" type="test" value="{{ data['input-autocomplete'] }}">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label form-control-2-3" for="org-name">
+            URL of the service
+            <span class="form-hint">The start page on GOV.UK, or a link to a PDF of the paper form if available</span>
           </label>
           <input class="form-control form-control-2-3" id="org-name" name="org-name" type="test" value="{{ data['org-name'] }}">
         </div>
