@@ -1,0 +1,180 @@
+{% extends "layout.html" %}
+
+{% block service_name %}
+{% endblock %}
+
+{% block page_title %}
+Provide data for the period 1 to 31 July 2017  
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Provide data for the period 1 to 31 July 2017
+      </h1>
+
+      <p>
+       Here's a <a href="../service-manual">reminder of what you need to provide</a>. Your data will be published on 1 September 2017.
+      </p>
+
+      <form>
+        <fieldset>          
+          <h2 class="bold-medium">Number of transactions received, split by channel</h2>
+
+          <div class="form-group remove-metric">
+            <label class="form-label" for="online-transactions">
+              Online  
+            </label>
+            <input class="form-control form-control-1-4" id="online-transactions" name="online-transactions" type="number">
+            <span>
+              <a class="font-xsmall" href="javascript:void(0)">The service doesn't have an online channel</a>
+            </span>
+          </div>
+
+          <div class="form-group remove-metric">
+            <label class="form-label" for="phone-transactions">
+              Phone 
+            </label>
+            <input class="form-control form-control-1-4" id="phone-transactions" name="phone-transactions" type="number">
+            <span>
+              <a class="font-xsmall" href="javascript:void(0)">The service doesn't have a phone channel</a>
+            </span>
+          </div>
+
+          <div class="form-group remove-metric">
+            <label class="form-label" for="paper-transactions">
+              Paper
+            </label>  
+            <input class="form-control form-control-1-4" id="paper-transactions" name="paper-transactions" type="number">
+            <span>
+              <a class="font-xsmall" href="javascript:void(0)">The service doesn't have a paper channel</a>
+            </span>
+          </div>
+
+          <div class="form-group remove-metric">
+            <label class="form-label" for="face-to-face-transactions">
+              Face-to-face
+            </label>
+            <input class="form-control form-control-1-4" id="paper-transactions" name="paper-transactions" type="number">
+            <span>
+              <a class="font-xsmall" href="javascript:void(0)">The service doesn't have a face-to-face channel</a>
+            </span>
+          </div>
+
+          <div class="form-group remove-metric">
+            <label class="form-label" for="other-transactions">
+              Other  
+            </label>
+            <input class="form-control form-control-1-4" id="other-transactions" name="other-transactions" type="number">
+            <span>
+              <a class="font-xsmall" href="javascript:void(0)">The service doesn't have an other channel</a>
+            </span>
+          </div>
+        </fieldset>
+        
+        <fieldset> 
+
+          <h2 class="bold-medium">Number of transactions ending in an outcome</h2>
+
+          <div class="form-group remove-metric">
+            <label class="form-label" for="transactions-ending-in-an-outome">
+              Transactions ending in an outcome
+            </label>
+            <input class="form-control form-control-1-4" id="transactions-ending-in-an-outome" name="transactions-ending-in-an-outome" type="number">
+            <span>
+              <a class="font-xsmall" href="javascript:void(0)">The service doesn't have any transactions ending in an outcome</a>
+            </span>
+          </div>
+
+        </fieldset>  
+
+        <fieldset>
+
+          <h2 class="bold-medium">Number of transactions ending in the user’s intended outcome</h2>
+
+          <div class="form-group remove-metric">
+            <label class="form-label" for="transactions-ending-in-the-users-intended-outome">
+              Transactions ending in the user's intended outcome
+            </label>
+            <input class="form-control form-control-1-4" id="transactions-ending-in-the-users-intended-outome" name="transactions-ending-in-the-users-intended-outome" type="number">
+            <span>
+              <a class="font-xsmall" href="javascript:void(0)">The service doesn't have any transactions ending in the user's intended outcome</a>
+            </span>
+          </div>
+
+        </fieldset>  
+
+        <fieldset>
+
+          <h2 class="bold-medium">Total number of phone calls received</h2>
+
+          <div class="form-group remove-metric">
+            <label class="form-label" for="calls-received">
+              Calls received 
+            </label>
+            <input class="form-control form-control-1-4" id="calls-received" name="calls-received" type="number">
+            <span>
+              <a class="font-xsmall" href="javascript:void(0)">The service doesn't receive phone calls</a>
+            </span>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+          <h2 class="bold-medium">Number of phone calls received, split by reasons for calling</h2>  
+
+          <div class="form-group remove-metric">
+            <label class="form-label" for="to-get-information">
+              to get information 
+            </label>
+            <input class="form-control form-control-1-4" id="to-get-information" name="to-get-information" type="number">
+            <span>
+              <a class="font-xsmall" href="javascript:void(0)">The service doesn't receive calls to get information</a>
+            </span>
+          </div>
+
+          <div class="form-group remove-metric">
+            <label class="form-label" for="to-chase-progress">
+              to chase progress 
+            </label>
+            <input class="form-control form-control-1-4" id="to-chase-progress" name="to-chase-progress" type="number">
+            <span>
+              <a class="font-xsmall" href="javascript:void(0)">The service doesn't receive calls to chase progress</a>
+            </span>
+          </div>
+
+          <div class="form-group remove-metric">
+            <label class="form-label" for="to-challenge-a-decision">
+              to challenge a decision 
+            </label>
+            <input class="form-control form-control-1-4" id="to-challenge-a-decision" name="to-challenge-a-decision" type="number">
+            <span>
+              <a class="font-xsmall" href="javascript:void(0)">The service doesn't receive calls to challenge a decision</a>
+            </span>
+          </div>
+
+          <div class="form-group remove-metric">
+            <label class="form-label" for="other-calls">
+              Other 
+            </label>
+            <input class="form-control form-control-1-4" id="other-calls" name="other-calls" type="number">
+            <span>
+              <a class="font-xsmall" href="javascript:void(0)">The service doesn't receive calls for other reasons</a>
+            </span>
+          </div>
+
+        </fieldset>
+      </form>      
+
+      <p><a class="button" href="magiclink-success">Submit</a></p>
+
+
+    </div>
+  </div>
+</main>
+{% endblock %}
