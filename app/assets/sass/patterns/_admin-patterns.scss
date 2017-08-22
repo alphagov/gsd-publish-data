@@ -1,0 +1,148 @@
+.admin{
+  background: $govuk-blue;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 3px 10px 0 10px;
+  margin-left: 10px;
+    vertical-align: 2px;
+}
+
+.signed-in-bar{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 0 10px 0;
+  border-bottom: 1px solid $border-colour;
+  min-height: 25px;
+  ul{
+    li{
+      float: right;
+      margin-left: 30px;
+    }
+  }
+}
+
+.sign-out-link{
+    float: right;
+    margin-top: 8px;
+    a{
+    color: white;
+      font-weight: bold;
+      text-decoration: none;
+      padding-right: 15px;
+    }
+}
+
+.navigation-service {
+  padding: 11px 0 9px 0;
+  border-bottom: 1px solid #bfc1c3;
+  margin: 0 0 10px;
+  position: relative;
+
+  .navigation-service-name {
+    font-weight: bold;
+  }
+
+  a {
+    font-size: 16px;
+  }
+}
+
+// side nav in admin
+
+.navigation {
+  padding: 0 30px 0 0;
+
+  li {
+    margin: 10px 0 0 0;
+    list-style-type: none;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+// account stuff
+
+.heading-account {
+  margin: 10px 0 15px 0;
+}
+
+// dashboard summary numbers
+
+.big-number-with-status {
+  position: relative;
+  margin: 15px 0 45px;
+
+  .big-number-label {
+    padding-bottom: 0;
+  }
+
+  .big-number-link {
+    text-decoration: none;
+    background: $govuk-blue;
+    color: $white;
+    display: block;
+    border: 2px solid $govuk-blue;
+    margin-bottom: 5px;
+  }
+
+  a:hover {
+    color: #d5e8f3;
+  }
+
+  .big-number-label {
+    text-decoration: underline;
+  }
+
+  .big-number {
+    padding: 15px;
+    position: relative;
+  }
+
+}
+
+// summary for data provision
+
+.publish-data-dates {
+  font-size: 16px;
+
+  dt {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+  }
+
+  dd {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+
+  dd:first-letter {
+    text-transform: uppercase;
+  }
+
+  dl {
+    margin: 0 0 15px;
+  }
+
+}
+
+.big-number-number {
+  // font-family: "ntatabularnumbers","nta",Arial,sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 36px;
+  line-height: 1.09375;
+  display: block;
+
+  @media (min-width: 641px){
+    font-size: 48px;
+    line-height: 1.04167;
+  }
+
+  span {
+    font-size: 28px;
+  }
+}

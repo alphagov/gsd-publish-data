@@ -1,0 +1,58 @@
+// breadcrumb
+
+.breadcrumb {
+  padding: 0.75em 0;
+  z-index: 50;
+  background-color: $white;
+}
+
+.breadcrumb ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+.breadcrumb ol li {
+  font-family: "nta",Arial,sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  font-weight: 300;
+  background-image: url(https://assets.digital.cabinet-office.gov.uk/static/separator-73822610794bc3a64871f144d93d6526.png);
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  float: left;
+  list-style: none;
+  margin-left: 0;
+  margin-right: 0.5em;
+  padding-right: 1em;
+}
+
+@media (max-width: 640px) {
+  .breadcrumb ol li {
+    font-size: 1.4rem;
+    line-height: 1.14286;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .breadcrumb ol li {
+    background-image: url(https://assets.digital.cabinet-office.gov.uk/static/separator-2x-2ff66846b80b66edba8ce56d29daa935.png);
+    background-size: 6px 11px;
+  }
+}
+
+.breadcrumb ol li a {
+  color: #0b0c0c;
+}
+
+.breadcrumb ol li a strong {
+  font-weight: normal;
+}
+
+.breadcrumb ol li:last-child {
+  background-image: none;
+  margin-right: 0;
+}
+
+.breadcrumb ol li:first-letter {
+  text-transform: capitalize;
+}

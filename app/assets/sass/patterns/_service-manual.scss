@@ -1,0 +1,172 @@
+// stuff from service manual prototype
+
+.metadata-header {
+  font-size: 14px;
+}
+
+.metadata-header dt, .metadata-header dd {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.metadata-header dt {
+  width: 20%;
+}
+
+.metadata-header dd {
+  width: 70%;
+}
+
+.metadata-header dd:first-letter {
+  text-transform: uppercase;
+}
+
+.metadata-header dl {
+  margin-bottom: 2em;
+}
+
+.footer-content {
+  margin-top: 30px;
+}
+
+.metadata-footer dl {
+  width: 66%;
+}
+
+.metadata-footer dl dd {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1em;
+  line-height: 1.2;
+}
+
+.metadata-footer dl dd a {
+  text-decoration: none;
+}
+
+.metadata-footer dl dd .update-description {
+  font-size: 16px;
+  color: #6f777b;
+  font-weight: normal;
+  display: block;
+}
+
+.metadata-footer dl dd .update-description a {
+  text-decoration: underline;
+}
+
+.metadata-footer dl dd a #otherupdatesbutton {
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  margin-top: 0.66em;
+}
+
+.metadata-footer dl dd .update-other-dates {
+  font-size: 19px;
+  margin-bottom: 1em;
+}
+
+#morechanges {
+  visibility: hidden;
+}
+
+.markdown .page-contents,
+.sidebar .page-contents {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0 0 2em 0;
+}
+
+.markdown .page-contents li,
+.sidebar .page-contents li {
+  margin-bottom: 0;
+}
+
+.markdown .page-contents a,
+.sidebar .page-contents a {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .markdown .page-contents a,
+  .sidebar .page-contents a {
+    font-size: 14px;
+    line-height: 1.1428571429;
+  }
+}
+
+.markdown .page-contents a:before,
+.sidebar .page-contents a:before {
+  content: "–";
+  margin-right: 6px;
+}
+
+.markdown .page-contents a:hover,
+.sidebar .page-contents a:hover {
+  text-decoration: underline;
+}
+
+.markdown .page-contents a.active,
+.sidebar .page-contents a.active {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-transform: none;
+}
+
+@media (max-width: 640px) {
+  .markdown .page-contents a.active,
+  .sidebar .page-contents a.active {
+    font-size: 14px;
+    line-height: 1.1428571429;
+  }
+}
+
+.markdown .page-contents-title,
+.sidebar .page-contents-title {
+  display: block;
+  font-size: 16px;
+}
+
+.home .page-contents-title,
+.home .page-contents,
+.topic .page-contents-title,
+.topic .page-contents,
+.tag-list .page-contents-title,
+.tag-list .page-contents,
+.dbd .page-contents-title,
+.dbd .page-contents {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+  }
+  .column-third.sticky {
+    max-width: 330px;
+  }
+  .align-column-right {
+    float: right;
+  }
+}
+
+.feedback {
+  text-align: right;
+  margin-top: 60px;
+}
+
+// service manual uses different type scale WTF
+
+.sm {
+  font-size: 27px;
+}
