@@ -102,42 +102,72 @@ Provide data for the period 1 to 31 July 2017
         </fieldset>
 
         <fieldset>
-          <h2 class="bold-medium">Number of phone calls received, split by reasons for calling</h2>  
+          <h2 class="bold-medium">Number of phone calls received, split by reason for calling</h2>  
+
+          <div class="form-group">
+
+            <legend>
+              Are your 'reason for calling' figures based on a sample of phone calls?
+            </legend>
+
+            <div class="multiple-choice mt-15" data-target="not-sampled">
+              <input id="example-not-sampled" type="radio" name="radio-contact-group" value="No">
+              <label for="example-not-sampled">No</label>
+            </div>
+
+            <div class="multiple-choice" data-target="sampled">
+              <input id="example-sampled" type="radio" name="radio-contact-group" value="Yes">
+              <label for="example-sampled">Yes</label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden mt-0" id="sampled">
+              <label class="form-label" for="sample-number">Sample size</label>
+              <input class="form-control form-control-1-3" name="sample-number" type="text" id="sample-number">
+            </div>
+
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="to-do-a-transaction">
+              Calls to do a transaction 
+              <!-- <span class="form-hint">
+                This should be the same number as transactions received by phone
+              </span> -->
+            </label>
+            <input class="form-control form-control-1-4" id="to-do-a-transaction" name="to-do-a-transaction" type="number">
+          </div>
 
           <div class="form-group">
             <label class="form-label" for="to-get-information">
-              to get information 
+              Calls to get information 
             </label>
             <input class="form-control form-control-1-4" id="to-get-information" name="to-get-information" type="number">
           </div>
 
           <div class="form-group">
             <label class="form-label" for="to-chase-progress">
-              to chase progress 
+              Calls to chase progress 
             </label>
             <input class="form-control form-control-1-4" id="to-chase-progress" name="to-chase-progress" type="number">
           </div>
 
           <div class="form-group">
             <label class="form-label" for="to-challenge-a-decision">
-              to challenge a decision 
+              Calls to challenge a decision 
             </label>
             <input class="form-control form-control-1-4" id="to-challenge-a-decision" name="to-challenge-a-decision" type="number">
           </div>
 
           <div class="form-group">
             <label class="form-label" for="other-calls">
-              Other 
+              Other calls
             </label>
             <input class="form-control form-control-1-4" id="other-calls" name="other-calls" type="number">
           </div>
 
         </fieldset>
+
         <input class="button" type="submit" value="Submit">
       </form>      
-
-      <p><a class="button" href="magiclink-success">Submit</a></p>
-
 
     </div>
   </div>
