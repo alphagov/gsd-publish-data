@@ -12,6 +12,7 @@ gem 'faraday_middleware'
 gem 'govuk-lint'
 gem 'devise'
 gem 'administrate'
+gem 'notifications-ruby-client'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
