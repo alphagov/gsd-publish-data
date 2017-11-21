@@ -1,3 +1,7 @@
+>  **This repository is no longer used and the code has been integrated into github.com/alphagov/gsd-api**
+
+
+
 # Government Service Data – Publish Data
 
 This is the publishing application for Government Service Data. This application interacts with the [GSD API](https://github.com/alphagov/gsd-api) to provide data for [View data](https://github.com/alphagov/gsd-view-data)
@@ -42,7 +46,6 @@ To start the server.
 
 You can test the server is up and running by visiting [http://127.0.0.1:3000/v1/data/government](http://127.0.0.1:3000/v1/data/government) or [http://gsd-api.dev/v1/data/government](http://gsd-api.dev/v1/data/government) if you are using [`Pow`](http://pow.cx/).
 
-
 ## Tests
 
 To run tests, you should run
@@ -60,5 +63,3 @@ Deployments are initiated by merging master into staging, and then pushing the s
 ### Running Migrations
 
 The migrations aren't automatically run by CI on deployment. To run all pending migrations use the following:
-
-    cf run-task gsd-publish-data "cd /app && bundle exec rake db:migrate" --name migrate
